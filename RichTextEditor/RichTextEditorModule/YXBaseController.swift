@@ -7,15 +7,10 @@
 
 import UIKit
 
-//import HeroUSDK
 
-typealias navRightBlock = () ->Void // 声明闭包
-// 声明点击头像或昵称闭包
-typealias userNameOrAvatarClickBlock = (_ userID: String?) ->Void
 
 class YXBaseController: UIViewController {
     
-    var clickNavRightBlock: navRightBlock?
     /// 无网络刷新事件
     var clickRefreshButtonBlock:(()->Void)?
     

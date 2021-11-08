@@ -148,8 +148,8 @@ extension YXBaseWithNavigationBarViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
-        self.navigationController?.isNavigationBarHidden = true
+//        self.navigationController?.navigationBar.isHidden = true
+//        self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {

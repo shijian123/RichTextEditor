@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>需要获取你的相机的访问权限，方便发帖时拍照</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>需要获取你的位置，方便拍照后保存图片信息</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>需要获取你的照片的访问权限，方便保存或上传图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要获取你的照片的访问权限，方便保存或上传图片</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

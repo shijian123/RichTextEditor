@@ -141,7 +141,9 @@ class YXLinkCardView: UIView {
     
     func resetCardView(_ model: YXPostLinkCardModel) {
         
-        iconImgView.setImage(with: model.iconUrl ?? "", placeholderImgStr: "base_default_04", errorImgStr: "base_default_error_04", isAbnormal: false, isShowGif: false, completionHandler: nil)
+        
+        iconImgView.image = UIImage(named: model.iconUrl ?? "")
+//        iconImgView.setImage(with: model.iconUrl ?? "", placeholderImgStr: "base_default_04", errorImgStr: "base_default_error_04", isAbnormal: false, isShowGif: false, completionHandler: nil)
         
         if model.postId?.count ?? 0 > 2 {
             titleLab.text = model.title

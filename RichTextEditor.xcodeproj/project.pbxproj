@@ -105,6 +105,8 @@
 		31BB6FEA2733762900E532B5 /* YXLinkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FE92733762900E532B5 /* YXLinkCardView.swift */; };
 		31BB6FEC2733795C00E532B5 /* YXImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FEB2733795C00E532B5 /* YXImagePickerController.swift */; };
 		31BB6FEF27337A0600E532B5 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */; };
+		31BB70172738CF2E00E532B5 /* card_icon_link.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BB70162738CF2E00E532B5 /* card_icon_link.png */; };
+		31BB70192738D43F00E532B5 /* base_default_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BB70182738D43F00E532B5 /* base_default_img.png */; };
 		4C6F198FFD68B4E12E2ADC8C /* Pods_RichTextEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */; };
 /* End PBXBuildFile section */
 
@@ -229,6 +231,8 @@
 		31BB6FEB2733795C00E532B5 /* YXImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXImagePickerController.swift; sourceTree = "<group>"; };
 		31BB6FED27337A0600E532B5 /* UIImage+Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compress.h"; sourceTree = "<group>"; };
 		31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compress.m"; sourceTree = "<group>"; };
+		31BB70162738CF2E00E532B5 /* card_icon_link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_icon_link.png; sourceTree = "<group>"; };
+		31BB70182738D43F00E532B5 /* base_default_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base_default_img.png; sourceTree = "<group>"; };
 		A32D012C180EC5620C41B208 /* Pods-RichTextEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichTextEditor.debug.xcconfig"; path = "Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C6A16087EF05BE49D47790 /* Pods-RichTextEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichTextEditor.release.xcconfig"; path = "Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor.release.xcconfig"; sourceTree = "<group>"; };
 		F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichTextEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -386,6 +390,8 @@
 				315C502627201CBB00726E35 /* richText_editor.html */,
 				315C501E27201CBB00726E35 /* article_editor.js */,
 				315C502527201CBB00726E35 /* jquery.js */,
+				31BB70162738CF2E00E532B5 /* card_icon_link.png */,
+				31BB70182738D43F00E532B5 /* base_default_img.png */,
 				315C502027201CBB00726E35 /* base_edit_error_img.png */,
 				315C501D27201CBB00726E35 /* icon_refresh.png */,
 				315C502327201CBB00726E35 /* post_delete.png */,
@@ -625,9 +631,11 @@
 				315C503927201CBB00726E35 /* style.css in Resources */,
 				315C503527201CBB00726E35 /* icon_refresh.png in Resources */,
 				315C503A27201CBB00726E35 /* normalize.css in Resources */,
+				31BB70192738D43F00E532B5 /* base_default_img.png in Resources */,
 				315C503627201CBB00726E35 /* article_editor.js in Resources */,
 				31BB6FBA27326A5200E532B5 /* TZImagePickerController.bundle in Resources */,
 				315C506A27203AF000726E35 /* EmojiPackage.bundle in Resources */,
+				31BB70172738CF2E00E532B5 /* card_icon_link.png in Resources */,
 				315C4FFA27201C7D00726E35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,17 +9,24 @@ import UIKit
 
 class YXEditorShowController: UIViewController {
 
+    var contentArr:Array<Dictionary<String, Any>> = []
     var postContent: [YXPostContentModel]? = []
+
     var longPressAction: YXTextAction?
     
     lazy var mainScrollV: UIScrollView = {
         let scrollV = UIScrollView(frame: self.view.bounds)
         scrollV.addSubview(contentLabel)
+//        contentLabel.snp.makeConstraints { make in
+//            make.top.equalToSuperview()
+//            make.left.equalToSuperview().offset(16)
+//            make.center.equalToSuperview()
+//        }
         return scrollV
     }()
     
     lazy var contentLabel: YYLabel = {
-        let lab = YYLabel(frame: self.view.bounds)
+        let lab = YYLabel(frame: CGRect(x: 16, y: 0, width: YXMainScreenWidth-32, height: 2000))
         return lab
     }()
     
@@ -27,6 +34,7 @@ class YXEditorShowController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "详情"
         view.addSubview(mainScrollV)
+        view.backgroundColor = .white
         
         // 设置贴子内容
         setupContentMethod()
@@ -39,6 +47,34 @@ class YXEditorShowController: UIViewController {
     
     /// 更新贴子内容
     func setupContentMethod() {
+        
+        self.postContent = []
+        
+        for itemDic in self.contentArr {
+            let content = itemDic["content"] as? String ?? ""
+            let contentType = itemDic["contentType"] as? String ?? ""
+            let imgHeight = itemDic["imgHeight"] as? String ?? ""
+            let imgWidth = itemDic["imgWidth"] as? String ?? ""
+            let isCover = itemDic["isCover"] as? String ?? ""
+            let url = itemDic["url"] as? String ?? ""
+
+            if let contentLink = itemDic["contentLink"] as? Dictionary<String, Any> {
+                let url = contentLink["url"] as? String ?? ""
+                let title = contentLink["title"] as? String ?? ""
+                let subTitle = contentLink["subTitle"] as? String ?? ""
+                let iconUrl = contentLink["iconUrl"] as? String ?? ""
+
+                let cardModel = YXPostLinkCardModel(url: url, title: title, subTitle: subTitle, iconUrl: iconUrl, headUrl: "", nickName: "", postId: "", cardId: "")
+                
+                let model = YXPostContentModel(content: content, contentType: contentType, imgHeight: imgHeight, imgWidth: imgWidth, isCover: isCover, url: url, isAbnormal: false, contentLink: cardModel)
+                self.postContent?.append(model)
+            }else {
+                let model = YXPostContentModel(content: content, contentType: contentType, imgHeight: imgHeight, imgWidth: imgWidth, isCover: isCover, url: url, isAbnormal: false)
+                self.postContent?.append(model)
+            }
+
+        }
+        
         contentLabel.numberOfLines = 0
         contentLabel.clearContentsBeforeAsynchronouslyDisplay = true
         contentLabel.textVerticalAlignment = .top

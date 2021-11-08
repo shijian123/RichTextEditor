@@ -68,3 +68,22 @@ class YXPublicMethod: NSObject {
         }
     }
 }
+
+extension YXPublicMethod {
+    /// 获取文字的行数
+    /// - Parameters:
+    ///   - attStr: 文字的属性
+    ///   - width: 文字的最大宽度
+    static func getNumberOfLines(_ attStr: NSAttributedString, width: CGFloat) -> Int {
+        let framesetter = CTFramesetterCreateWithAttributedString(attStr)
+        let path = CGMutablePath()
+        path.addRect(CGRect(x: 0, y: 0, width: Int(width), height: Int.max))
+        let frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, nil)
+        // 得到字串在frame中被自动分成了多少个行
+        let rows = CTFrameGetLines(frame)
+        // 实际行数
+        let numberOfLines = CFArrayGetCount(rows)
+        return numberOfLines
+        
+    }
+}

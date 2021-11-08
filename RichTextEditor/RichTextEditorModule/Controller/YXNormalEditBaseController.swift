@@ -20,7 +20,7 @@ enum YXPostEditOriginStyle {
     
 }
 
-class YXNormalEditBaseController: YXBaseWithNavigationBarViewController, WKNavigationDelegate, WKUIDelegate {
+class YXNormalEditBaseController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     /// 贴子编辑成功回调
     var postEditFinishBlock:(() -> Void)?
@@ -70,6 +70,22 @@ class YXNormalEditBaseController: YXBaseWithNavigationBarViewController, WKNavig
         view.alpha = 0.29
         return view
     }()
+    
+    /// 发布
+    lazy var navRightPublishBtn: UIButton = {
+        let rightBtn = UIButton(type: .system)
+        rightBtn.frame = CGRect(x: YXMainScreenWidth - 60 - 16, y: YXStatusBarHight+6, width: 60, height: 32)
+        rightBtn.setTitle("发布", for: .normal)
+        rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        rightBtn.setTitleColor(.white, for: .normal)
+//        rightBtn.setTitleColor(UIColor(hexString: "0x666666"), for: .disabled)
+        rightBtn.backgroundColor = UIColor(hexString: "0xDFDEE4")
+        rightBtn.layer.cornerRadius = 16
+        rightBtn.layer.masksToBounds = true
+        rightBtn.isEnabled = false
+        rightBtn.addTarget(self, action: #selector(navPublishPostBtnAction), for: .touchUpInside)
+        return rightBtn
+    }()
 
     convenience init(originStyle: YXPostEditOriginStyle, gameId: String, forumModel: YXGameForumModel, topicList: [YXTopicsModel]) {
         self.init()
@@ -102,12 +118,10 @@ extension YXNormalEditBaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 是否编辑贴子
-//        if let forumModel: YXGameForumModel = self.viewModel.setupEditPostMethod() {
-//            self.headerView.isPostEdit = true
-//            self.headerView.configUI(self.viewModel.detailModel?.postTitle ?? "", gameId: self.viewModel.detailModel?.gameId ?? "", forumModel: forumModel, topicList: self.viewModel.detailModel?.topics ?? [])
-//        }
-        
+        loadMainView()
+        loadNavigationBar()
+        navBackBtnAction()
+        addBlock()
         // 监控粘贴事件，并删除粘贴内容的格式
         self.myWebView.setupListenerPaste()
     }
@@ -118,9 +132,8 @@ extension YXNormalEditBaseController {
 
 extension YXNormalEditBaseController {
     
-    override func loadMainView() {
-        super.loadMainView()
-        
+    func loadMainView() {
+        view.backgroundColor = .white
         view.addSubview(self.myWebView)
         
         self.myWebView.frame = CGRect(x: 0, y: CGFloat(YXNavBarHight), width: YXMainScreenWidth, height: YXMainScreenHeight - YXNavBarHight)
@@ -128,24 +141,20 @@ extension YXNormalEditBaseController {
         
     }
     
-    override func loadNavigationBar() {
-        super.loadNavigationBar()
-        
-        navTitleLabel.text = "发布贴子"
-        navView.addSubview(navRightPublishBtn)
-        navRightPublishBtn.frame = CGRect(x: YXMainScreenWidth - 60 - 16, y: YXStatusBarHight+6, width: 60, height: 32)
+    func loadNavigationBar() {
+        self.title = "富文本编辑器"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: navRightPublishBtn)
     }
     
-    override func navBackBtnAction() {
+    func navBackBtnAction() {
         if !self.viewModel.isPostEdit {// 非已发布贴子的编辑，保存草稿
             let str = self.headerView.titleTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
             self.viewModel.savePostDraftMethod(titleStr: str)
         }
-        super.navBackBtnAction()
     }
     
     // MARK: 设置回调
-    override func addBlock() {
+    func addBlock() {
         
         // 键盘配件触发事件
         self.myWebView.accessoryView.clickEditItemBlock = {[weak self] (editorBar, item) in
@@ -463,15 +472,22 @@ extension YXNormalEditBaseController {
         DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
             hud.hide(animated: true, afterDelay: 0.3)
             
-            let imgUrls = ["","","","","","","",""]
+            let imgUrls = [
+                "https://pic.netbian.com/uploads/allimg/211021/232902-16348301422218.jpg",
+                "https://pic.netbian.com/uploads/allimg/210804/220733-16280860535ceb.jpg",
+                "https://pic.netbian.com/uploads/allimg/210704/004908-1625330948b63c.jpg",
+                "https://pic.netbian.com/uploads/allimg/210528/003636-16221333962311.jpg",
+                "https://pic.netbian.com/uploads/allimg/210405/224731-1617634051457e.jpg",
+                "https://pic.netbian.com/uploads/allimg/201207/181626-160733618619ea.jpg",
+                "https://pic.netbian.com/uploads/allimg/210704/004908-1625330948b63c.jpg",
+                "https://pic.netbian.com/uploads/allimg/210405/224731-1617634051457e.jpg",
+                "https://pic.netbian.com/uploads/allimg/201207/181626-160733618619ea.jpg"]
             let uploadPicArr = uploadPics
             for i in 0..<uploadPicArr.count {
                 
-                let model: YXUploadImageModel = photos[i]
-                
                 let fileM = uploadPicArr[i]
                 let imgUrl = imgUrls[i]
-                let imgSize = model.image?.size ?? CGSize(width: 10, height: 10)
+                let imgSize = CGSize(width: 450, height: 287)
                 self.myWebView.insertImageKey(fileM.key!, progress: 1.0)
                 // div的左右间距为20
                 let div_h = CGFloat((self.myWebView.width) - 40) * imgSize.height / imgSize.width
@@ -519,27 +535,18 @@ extension YXNormalEditBaseController {
             return
         }
         let titleStr = self.myWebView.linkAccessoryView.titleTF.text ?? ""
+        let linkStr = self.myWebView.linkAccessoryView.linkTF.text ?? ""
         
-//        viewModel.requestServerParseLink(link) {[weak self] finish, model in
-//            if finish {
-//
-//                // 清空链接
-//                self?.myWebView.linkAccessoryView.linkTF.text = ""
-//                self?.myWebView.linkAccessoryView.titleTF.text = ""
-//
-//                var cardModel: YXPostLinkCardModel
-//                let cordKey = NSString.imageUUID()
-//                if model?.postId?.count ?? 0 > 0 {// 贴子链接
-//                    cardModel = YXPostLinkCardModel(url: link, title: model?.postTitle ?? "", subTitle: model?.postContent ?? "", iconUrl: model?.iconUrl ?? "", headUrl: model?.userHeadUrl ?? "", nickName: model?.nickName ?? "", postId: model?.postId ?? "", cardId: cordKey)
-//
-//                }else {// 外部链接
-//                    cardModel = YXPostLinkCardModel(url: link, title: titleStr, iconUrl: model?.iconUrl ?? "", cardId: cordKey)
-//                }
-//                let cardHtml = YXCommonViewModel.creatLinkCardHtml(model: cardModel)
-//                self?.myWebView.insertLinkCardKey(cordKey, cardHtml: cardHtml)
-//                self?.closeLinkCardMethod()
-//            }
-//        }
+        let cordKey = NSString.imageUUID()
+        let cardModel = YXPostLinkCardModel(url: linkStr, title: titleStr, iconUrl: "card_icon_link.png", cardId: cordKey)
+
+        let cardHtml = YXCommonViewModel.creatLinkCardHtml(model: cardModel)
+        self.myWebView.insertLinkCardKey(cordKey, cardHtml: cardHtml)
+        self.closeLinkCardMethod()
+        
+        // 清空链接
+        self.myWebView.linkAccessoryView.linkTF.text = ""
+        self.myWebView.linkAccessoryView.titleTF.text = ""
     }
     
     // 关闭外链卡片入口
@@ -619,7 +626,7 @@ extension YXNormalEditBaseController {
 extension YXNormalEditBaseController {
     
     // 点击发布
-    override func navPublishPostBtnAction(sender: UIButton) {
+    @objc func navPublishPostBtnAction(sender: UIButton) {
         
         sender.avoidRepeatMethod()
         self.myWebView.contentHtmlTextHandler { (result) in
@@ -651,38 +658,17 @@ extension YXNormalEditBaseController {
             MBProgressHUD.showText("内容不能为空")
             return
         }
-        
-        // 话题list
-        var topicStr = ""
-//        for topic in self.headerView.topicList {
-//            topicStr += topic.topicId! + ","
-//        }
-        if topicStr.count > 0 {// 话题可为空
-            topicStr.removeLast()
-        }
+
         /// 结束编辑状态
         self.view.endEditing(true)
         
-        // FIXME: 测试，超出10000字数后内容丢失
         
         let titleStr = self.headerView.titleTF.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         
-        let hud = MBProgressHUD.showAddHud()
-        
-//        viewModel.requestServerPostPublish(contentArr, gameForumId: "\(self.headerView.forumModel?.id ?? "")", gameId: self.headerView.gameId, postTitle: titleStr, postType: "1", topics: topicStr, postId: self.viewModel.postId) {[weak self] (finished, postID) in
-//            hud.hide(animated: true)
-//            if finished {// 请求结束后切换到首页进入到详情页面
-//
-//                if self?.viewModel.postId.count ?? 0 > 0 {// 贴子编辑成功
-//                    self?.postEditFinishBlock?()
-//                    self?.postEditFinishMethod(self?.viewModel.postId ?? "")
-//                }else {// 贴子发布成功
-//                    self?.postPushFinishMethod(postID ?? "", originStyle: self?.originStyle ?? .noraml)
-                    // 清空草稿箱
-//                    YXPostDraftManager.saveNormalPostDraft(title: "", contentStr: "")
-//                }
-//            }
-//        }
+        let detailVC = YXEditorShowController()
+        detailVC.title = titleStr
+        detailVC.contentArr = contentArr
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 
