@@ -17,16 +17,11 @@ class YXEditorShowController: UIViewController {
     lazy var mainScrollV: UIScrollView = {
         let scrollV = UIScrollView(frame: self.view.bounds)
         scrollV.addSubview(contentLabel)
-//        contentLabel.snp.makeConstraints { make in
-//            make.top.equalToSuperview()
-//            make.left.equalToSuperview().offset(16)
-//            make.center.equalToSuperview()
-//        }
         return scrollV
     }()
     
     lazy var contentLabel: YYLabel = {
-        let lab = YYLabel(frame: CGRect(x: 16, y: 0, width: YXMainScreenWidth-32, height: 2000))
+        let lab = YYLabel(frame: CGRect(x: 16, y: 0, width: YXMainScreenWidth-32, height: 20))
         return lab
     }()
     
@@ -38,10 +33,6 @@ class YXEditorShowController: UIViewController {
         
         // 设置贴子内容
         setupContentMethod()
-
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
-            self.mainScrollV.contentSize = CGSize(width: YXMainScreenWidth, height: self.contentLabel.height)
-        }
     }
 
     
@@ -82,7 +73,17 @@ class YXEditorShowController: UIViewController {
 
         let contentStr = viewModel.creatContent(contentList: self.postContent ?? [], isPost: true, longPressAction: longPressAction)
         contentLabel.attributedText = contentStr
+        
         // 约束不精准，需手动设置最大值
         contentLabel.preferredMaxLayoutWidth = YXMainScreenWidth - contentLabel.x*2
+        
+        let layout = YYTextLayout(containerSize: CGSize(width: YXMainScreenWidth - contentLabel.x*2, height: CGFloat(MAXFLOAT)), text: contentStr)
+        contentLabel.textLayout = layout
+        let introHeight = layout?.textBoundingSize.height ?? 20
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+            self.contentLabel.height = introHeight
+            self.mainScrollV.contentSize = CGSize(width: YXMainScreenWidth, height: introHeight+20)
+        }
+        
     }
 }
