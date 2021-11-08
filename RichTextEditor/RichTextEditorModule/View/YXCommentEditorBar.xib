@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YXCommentEditorBar" customModule="HeroGameBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux9-ne-Ahj" userLabel="img">
+                    <rect key="frame" x="0.0" y="0.0" width="62.5" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62.5" id="O8r-Cv-v4Y"/>
+                        <constraint firstAttribute="height" constant="49" id="m2t-sf-ckL"/>
+                    </constraints>
+                    <state key="normal" image="post_comment_icon_emoji"/>
+                    <connections>
+                        <action selector="clickItemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="P9S-J6-rca"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sj-Dn-FPh" userLabel="redo">
+                    <rect key="frame" x="62.5" y="0.0" width="62.5" height="49"/>
+                    <state key="normal" image="post_comment_icon_piccure">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="clickItemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="iWj-Ws-Jcb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4z-qc-xPp">
+                    <rect key="frame" x="334" y="10.5" width="64" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="F0P-H9-oD6"/>
+                        <constraint firstAttribute="height" constant="29" id="Wyx-DS-4HH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="发送" backgroundImage="base_btn_send_bg_s">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickItemAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ibh-VC-gKZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ux9-ne-Ahj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0lF-Mr-zBD"/>
+                <constraint firstItem="ux9-ne-Ahj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Zk-du-IOH"/>
+                <constraint firstItem="3sj-Dn-FPh" firstAttribute="top" secondItem="ux9-ne-Ahj" secondAttribute="top" id="4Hd-18-oKo"/>
+                <constraint firstAttribute="trailing" secondItem="e4z-qc-xPp" secondAttribute="trailing" constant="16" id="M8s-mI-Def"/>
+                <constraint firstItem="3sj-Dn-FPh" firstAttribute="leading" secondItem="ux9-ne-Ahj" secondAttribute="trailing" id="Pri-EA-LTX"/>
+                <constraint firstItem="3sj-Dn-FPh" firstAttribute="width" secondItem="ux9-ne-Ahj" secondAttribute="width" id="Wmn-Gz-mW7"/>
+                <constraint firstItem="3sj-Dn-FPh" firstAttribute="height" secondItem="ux9-ne-Ahj" secondAttribute="height" id="frc-YE-F5r"/>
+                <constraint firstItem="e4z-qc-xPp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uTV-Dt-Jbb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="senderBtn" destination="e4z-qc-xPp" id="6VJ-6H-eVq"/>
+            </connections>
+            <point key="canvasLocation" x="81" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="base_btn_send_bg_s" width="64" height="28"/>
+        <image name="post_comment_icon_emoji" width="28" height="28"/>
+        <image name="post_comment_icon_piccure" width="28" height="28"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

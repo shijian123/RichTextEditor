@@ -3,27 +3,235 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		315C4FF327201C7D00726E35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C4FF227201C7D00726E35 /* AppDelegate.swift */; };
-		315C4FF527201C7D00726E35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C4FF427201C7D00726E35 /* SceneDelegate.swift */; };
 		315C4FF727201C7D00726E35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C4FF627201C7D00726E35 /* ViewController.swift */; };
 		315C4FFA27201C7D00726E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315C4FF827201C7D00726E35 /* Main.storyboard */; };
 		315C4FFC27201C7E00726E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315C4FFB27201C7E00726E35 /* Assets.xcassets */; };
 		315C4FFF27201C7E00726E35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315C4FFD27201C7E00726E35 /* LaunchScreen.storyboard */; };
+		315C502727201CBB00726E35 /* YXNormalEditBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C500827201CBB00726E35 /* YXNormalEditBaseViewModel.swift */; };
+		315C502827201CBB00726E35 /* WKWebView+YXWebViewJSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C500A27201CBB00726E35 /* WKWebView+YXWebViewJSTool.m */; };
+		315C502927201CBB00726E35 /* YXHtmlEditTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C500D27201CBB00726E35 /* YXHtmlEditTool.m */; };
+		315C502A27201CBB00726E35 /* YXNormalEditBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C500F27201CBB00726E35 /* YXNormalEditBaseController.swift */; };
+		315C502B27201CBB00726E35 /* YXHtmlUploadPictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501127201CBB00726E35 /* YXHtmlUploadPictureModel.swift */; };
+		315C502C27201CBB00726E35 /* YXEditWebViewPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501227201CBB00726E35 /* YXEditWebViewPool.swift */; };
+		315C502D27201CBB00726E35 /* YXHtmlEditorBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501427201CBB00726E35 /* YXHtmlEditorBar.swift */; };
+		315C502E27201CBB00726E35 /* YXHtmlEditorLinkBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501527201CBB00726E35 /* YXHtmlEditorLinkBar.swift */; };
+		315C502F27201CBB00726E35 /* YXHtmlEditorLinkBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C501627201CBB00726E35 /* YXHtmlEditorLinkBar.xib */; };
+		315C503027201CBB00726E35 /* YXEditHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501727201CBB00726E35 /* YXEditHeaderView.swift */; };
+		315C503127201CBB00726E35 /* YXCommentEditorBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C501827201CBB00726E35 /* YXCommentEditorBar.xib */; };
+		315C503227201CBB00726E35 /* YXEditWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501927201CBB00726E35 /* YXEditWebView.swift */; };
+		315C503327201CBB00726E35 /* YXHtmlEditorBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C501A27201CBB00726E35 /* YXHtmlEditorBar.xib */; };
+		315C503427201CBB00726E35 /* YXCommentEditorBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C501B27201CBB00726E35 /* YXCommentEditorBar.swift */; };
+		315C503527201CBB00726E35 /* icon_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 315C501D27201CBB00726E35 /* icon_refresh.png */; };
+		315C503627201CBB00726E35 /* article_editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 315C501E27201CBB00726E35 /* article_editor.js */; };
+		315C503827201CBB00726E35 /* base_edit_error_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 315C502027201CBB00726E35 /* base_edit_error_img.png */; };
+		315C503927201CBB00726E35 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 315C502127201CBB00726E35 /* style.css */; };
+		315C503A27201CBB00726E35 /* normalize.css in Resources */ = {isa = PBXBuildFile; fileRef = 315C502227201CBB00726E35 /* normalize.css */; };
+		315C503B27201CBB00726E35 /* post_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 315C502327201CBB00726E35 /* post_delete.png */; };
+		315C503D27201CBB00726E35 /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 315C502527201CBB00726E35 /* jquery.js */; };
+		315C503E27201CBB00726E35 /* richText_editor.html in Resources */ = {isa = PBXBuildFile; fileRef = 315C502627201CBB00726E35 /* richText_editor.html */; };
+		315C5041272038CA00726E35 /* YXUploadImagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5040272038CA00726E35 /* YXUploadImagesManager.swift */; };
+		315C5043272038FC00726E35 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5042272038FB00726E35 /* UIColor+Extension.swift */; };
+		315C50462720393700726E35 /* YXBaseWithNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C50442720393700726E35 /* YXBaseWithNavigationBarViewController.swift */; };
+		315C50472720393700726E35 /* YXBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C50452720393700726E35 /* YXBaseController.swift */; };
+		315C504B2720397300726E35 /* YXConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C504A2720397300726E35 /* YXConst.swift */; };
+		315C504D2720398F00726E35 /* YXUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C504C2720398F00726E35 /* YXUserInfoModel.swift */; };
+		315C506027203AF000726E35 /* YXTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505427203AF000726E35 /* YXTextAttachment.swift */; };
+		315C506127203AF000726E35 /* YXEmojiTabbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505527203AF000726E35 /* YXEmojiTabbarCell.swift */; };
+		315C506227203AF000726E35 /* YXEmojiInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505627203AF000726E35 /* YXEmojiInputView.swift */; };
+		315C506427203AF000726E35 /* YXEmojiTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C505827203AF000726E35 /* YXEmojiTabbar.xib */; };
+		315C506527203AF000726E35 /* YXEmojiDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505927203AF000726E35 /* YXEmojiDataManager.swift */; };
+		315C506627203AF000726E35 /* YXEmojiTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505A27203AF000726E35 /* YXEmojiTabbar.swift */; };
+		315C506727203AF000726E35 /* YXEmojiViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505B27203AF000726E35 /* YXEmojiViewCell.swift */; };
+		315C506827203AF000726E35 /* YXEmojiContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505C27203AF000726E35 /* YXEmojiContentView.swift */; };
+		315C506927203AF000726E35 /* YXEmojiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C505D27203AF000726E35 /* YXEmojiViewCell.xib */; };
+		315C506A27203AF000726E35 /* EmojiPackage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 315C505E27203AF000726E35 /* EmojiPackage.bundle */; };
+		315C506B27203AF000726E35 /* YXEmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505F27203AF000726E35 /* YXEmojiModel.swift */; };
+		315C506F27203B7B00726E35 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C506E27203B7B00726E35 /* UIButton+Extension.swift */; };
+		315C507127203DFB00726E35 /* YXPostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507027203DFB00726E35 /* YXPostDetailModel.swift */; };
+		315C507327203E0800726E35 /* YXCommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507227203E0800726E35 /* YXCommonViewModel.swift */; };
+		315C507527203EE500726E35 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507427203EE500726E35 /* UIView+Frame.swift */; };
+		315C507C2721203A00726E35 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507B2721203A00726E35 /* String+Extension.swift */; };
+		315C507E2721208400726E35 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507D2721208400726E35 /* UIImageView+Extension.swift */; };
+		315C5083272143B500726E35 /* YXImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5082272143B500726E35 /* YXImageView.swift */; };
+		315C5085272144B800726E35 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5084272144B800726E35 /* MBProgressHUD+Extension.swift */; };
+		315C50872721459500726E35 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C50862721459500726E35 /* DispatchQueue+Extension.swift */; };
+		315C508D2721528400726E35 /* YXDownloadPhotoImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C508A2721528400726E35 /* YXDownloadPhotoImageCell.swift */; };
+		315C508E2721528400726E35 /* YXPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C508B2721528400726E35 /* YXPhotoBrowserProgressView.swift */; };
+		315C508F2721528400726E35 /* YXPhotoShowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C508C2721528400726E35 /* YXPhotoShowTool.swift */; };
+		315C50A0272152AA00726E35 /* JXPhotoBrowserPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5091272152A900726E35 /* JXPhotoBrowserPageIndicator.swift */; };
+		315C50A1272152AA00726E35 /* JXPhotoBrowserNoneAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5092272152A900726E35 /* JXPhotoBrowserNoneAnimator.swift */; };
+		315C50A2272152AA00726E35 /* JXPhotoBrowserZoomSupportedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5093272152A900726E35 /* JXPhotoBrowserZoomSupportedCell.swift */; };
+		315C50A3272152AA00726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5094272152A900726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift */; };
+		315C50A4272152AA00726E35 /* JXPhotoBrowserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5095272152A900726E35 /* JXPhotoBrowserImageView.swift */; };
+		315C50A5272152AA00726E35 /* JXPhotoBrowserAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5096272152A900726E35 /* JXPhotoBrowserAnimatedTransitioning.swift */; };
+		315C50A6272152AA00726E35 /* JXPhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5097272152A900726E35 /* JXPhotoBrowserCell.swift */; };
+		315C50A7272152AA00726E35 /* JXPhotoBrowserNumberPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5098272152A900726E35 /* JXPhotoBrowserNumberPageIndicator.swift */; };
+		315C50A8272152AA00726E35 /* JXPhotoBrowserZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5099272152A900726E35 /* JXPhotoBrowserZoomAnimator.swift */; };
+		315C50A9272152AA00726E35 /* JXPhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509A272152A900726E35 /* JXPhotoBrowserView.swift */; };
+		315C50AA272152AA00726E35 /* JXPhotoBrowserDefaultPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509B272152A900726E35 /* JXPhotoBrowserDefaultPageIndicator.swift */; };
+		315C50AB272152AA00726E35 /* JXPhotoBrowserImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509C272152A900726E35 /* JXPhotoBrowserImageCell.swift */; };
+		315C50AC272152AA00726E35 /* JXPhotoBrowserFadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509D272152A900726E35 /* JXPhotoBrowserFadeAnimator.swift */; };
+		315C50AD272152AA00726E35 /* JXPhotoBrowserLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509E272152A900726E35 /* JXPhotoBrowserLog.swift */; };
+		315C50AE272152AA00726E35 /* JXPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509F272152A900726E35 /* JXPhotoBrowser.swift */; };
+		31BB6F90273269F800E532B5 /* YXPublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F8F273269F800E532B5 /* YXPublicMethod.swift */; };
+		31BB6FB327326A5200E532B5 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9427326A5200E532B5 /* TZImageCropManager.m */; };
+		31BB6FB427326A5200E532B5 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9627326A5200E532B5 /* TZAssetCell.m */; };
+		31BB6FB527326A5200E532B5 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9827326A5200E532B5 /* TZVideoPlayerController.m */; };
+		31BB6FB627326A5200E532B5 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9927326A5200E532B5 /* TZAssetModel.m */; };
+		31BB6FB727326A5200E532B5 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9A27326A5200E532B5 /* NSBundle+TZImagePicker.m */; };
+		31BB6FB827326A5200E532B5 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9D27326A5200E532B5 /* UIView+Layout.m */; };
+		31BB6FB927326A5200E532B5 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9E27326A5200E532B5 /* TZPhotoPreviewController.m */; };
+		31BB6FBA27326A5200E532B5 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31BB6F9F27326A5200E532B5 /* TZImagePickerController.bundle */; };
+		31BB6FBB27326A5200E532B5 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA027326A5200E532B5 /* TZProgressView.m */; };
+		31BB6FBC27326A5200E532B5 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA427326A5200E532B5 /* TZImageManager.m */; };
+		31BB6FBD27326A5200E532B5 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA627326A5200E532B5 /* TZPhotoPickerController.m */; };
+		31BB6FBE27326A5200E532B5 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA727326A5200E532B5 /* TZPhotoPreviewCell.m */; };
+		31BB6FBF27326A5200E532B5 /* YXImagePickerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FAB27326A5200E532B5 /* YXImagePickerTool.m */; };
+		31BB6FC027326A5200E532B5 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FAE27326A5200E532B5 /* TZImagePickerController.m */; };
+		31BB6FC127326A5200E532B5 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FAF27326A5200E532B5 /* TZLocationManager.m */; };
+		31BB6FC227326A5200E532B5 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FB027326A5200E532B5 /* TZGifPhotoPreviewController.m */; };
+		31BB6FC327326A5200E532B5 /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FB127326A5200E532B5 /* TZImageRequestOperation.m */; };
+		31BB6FC527326EE100E532B5 /* YXRichTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FC427326EE100E532B5 /* YXRichTextModel.swift */; };
+		31BB6FCD27326F5500E532B5 /* YXPostDraftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FC827326F5500E532B5 /* YXPostDraftViewModel.swift */; };
+		31BB6FCE27326F5500E532B5 /* YXPostDraftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FCB27326F5500E532B5 /* YXPostDraftModel.swift */; };
+		31BB6FE22732888600E532B5 /* YXEditorShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FE02732888600E532B5 /* YXEditorShowController.swift */; };
+		31BB6FE527328C3800E532B5 /* YXEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FE427328C3800E532B5 /* YXEditorViewModel.swift */; };
+		31BB6FE82733756400E532B5 /* YXUserInterfaceStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FE72733756400E532B5 /* YXUserInterfaceStyleManager.swift */; };
+		31BB6FEA2733762900E532B5 /* YXLinkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FE92733762900E532B5 /* YXLinkCardView.swift */; };
+		31BB6FEC2733795C00E532B5 /* YXImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FEB2733795C00E532B5 /* YXImagePickerController.swift */; };
+		31BB6FEF27337A0600E532B5 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */; };
+		4C6F198FFD68B4E12E2ADC8C /* Pods_RichTextEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		315C4FEF27201C7D00726E35 /* RichTextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichTextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315C4FF227201C7D00726E35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		315C4FF427201C7D00726E35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		315C4FF627201C7D00726E35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		315C4FF927201C7D00726E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		315C4FFB27201C7E00726E35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		315C4FFE27201C7E00726E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		315C500027201C7E00726E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315C500827201CBB00726E35 /* YXNormalEditBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXNormalEditBaseViewModel.swift; sourceTree = "<group>"; };
+		315C500A27201CBB00726E35 /* WKWebView+YXWebViewJSTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+YXWebViewJSTool.m"; sourceTree = "<group>"; };
+		315C500B27201CBB00726E35 /* YXHtmlEditTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHtmlEditTool.h; sourceTree = "<group>"; };
+		315C500C27201CBB00726E35 /* WKWebView+YXWebViewJSTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+YXWebViewJSTool.h"; sourceTree = "<group>"; };
+		315C500D27201CBB00726E35 /* YXHtmlEditTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHtmlEditTool.m; sourceTree = "<group>"; };
+		315C500F27201CBB00726E35 /* YXNormalEditBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXNormalEditBaseController.swift; sourceTree = "<group>"; };
+		315C501127201CBB00726E35 /* YXHtmlUploadPictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHtmlUploadPictureModel.swift; sourceTree = "<group>"; };
+		315C501227201CBB00726E35 /* YXEditWebViewPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEditWebViewPool.swift; sourceTree = "<group>"; };
+		315C501427201CBB00726E35 /* YXHtmlEditorBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHtmlEditorBar.swift; sourceTree = "<group>"; };
+		315C501527201CBB00726E35 /* YXHtmlEditorLinkBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXHtmlEditorLinkBar.swift; sourceTree = "<group>"; };
+		315C501627201CBB00726E35 /* YXHtmlEditorLinkBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHtmlEditorLinkBar.xib; sourceTree = "<group>"; };
+		315C501727201CBB00726E35 /* YXEditHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEditHeaderView.swift; sourceTree = "<group>"; };
+		315C501827201CBB00726E35 /* YXCommentEditorBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXCommentEditorBar.xib; sourceTree = "<group>"; };
+		315C501927201CBB00726E35 /* YXEditWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEditWebView.swift; sourceTree = "<group>"; };
+		315C501A27201CBB00726E35 /* YXHtmlEditorBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXHtmlEditorBar.xib; sourceTree = "<group>"; };
+		315C501B27201CBB00726E35 /* YXCommentEditorBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXCommentEditorBar.swift; sourceTree = "<group>"; };
+		315C501D27201CBB00726E35 /* icon_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_refresh.png; sourceTree = "<group>"; };
+		315C501E27201CBB00726E35 /* article_editor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = article_editor.js; sourceTree = "<group>"; };
+		315C502027201CBB00726E35 /* base_edit_error_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base_edit_error_img.png; sourceTree = "<group>"; };
+		315C502127201CBB00726E35 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		315C502227201CBB00726E35 /* normalize.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = normalize.css; sourceTree = "<group>"; };
+		315C502327201CBB00726E35 /* post_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = post_delete.png; sourceTree = "<group>"; };
+		315C502527201CBB00726E35 /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		315C502627201CBB00726E35 /* richText_editor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = richText_editor.html; sourceTree = "<group>"; };
+		315C5040272038CA00726E35 /* YXUploadImagesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXUploadImagesManager.swift; sourceTree = "<group>"; };
+		315C5042272038FB00726E35 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		315C50442720393700726E35 /* YXBaseWithNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXBaseWithNavigationBarViewController.swift; sourceTree = "<group>"; };
+		315C50452720393700726E35 /* YXBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXBaseController.swift; sourceTree = "<group>"; };
+		315C504A2720397300726E35 /* YXConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXConst.swift; sourceTree = "<group>"; };
+		315C504C2720398F00726E35 /* YXUserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXUserInfoModel.swift; sourceTree = "<group>"; };
+		315C505427203AF000726E35 /* YXTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXTextAttachment.swift; sourceTree = "<group>"; };
+		315C505527203AF000726E35 /* YXEmojiTabbarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiTabbarCell.swift; sourceTree = "<group>"; };
+		315C505627203AF000726E35 /* YXEmojiInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiInputView.swift; sourceTree = "<group>"; };
+		315C505827203AF000726E35 /* YXEmojiTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXEmojiTabbar.xib; sourceTree = "<group>"; };
+		315C505927203AF000726E35 /* YXEmojiDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiDataManager.swift; sourceTree = "<group>"; };
+		315C505A27203AF000726E35 /* YXEmojiTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiTabbar.swift; sourceTree = "<group>"; };
+		315C505B27203AF000726E35 /* YXEmojiViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiViewCell.swift; sourceTree = "<group>"; };
+		315C505C27203AF000726E35 /* YXEmojiContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiContentView.swift; sourceTree = "<group>"; };
+		315C505D27203AF000726E35 /* YXEmojiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXEmojiViewCell.xib; sourceTree = "<group>"; };
+		315C505E27203AF000726E35 /* EmojiPackage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmojiPackage.bundle; sourceTree = "<group>"; };
+		315C505F27203AF000726E35 /* YXEmojiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiModel.swift; sourceTree = "<group>"; };
+		315C506E27203B7B00726E35 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		315C507027203DFB00726E35 /* YXPostDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPostDetailModel.swift; sourceTree = "<group>"; };
+		315C507227203E0800726E35 /* YXCommonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXCommonViewModel.swift; sourceTree = "<group>"; };
+		315C507427203EE500726E35 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		315C507B2721203A00726E35 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		315C507D2721208400726E35 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		315C507F2721414D00726E35 /* RichTextEditor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RichTextEditor-Bridging-Header.h"; sourceTree = "<group>"; };
+		315C5082272143B500726E35 /* YXImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXImageView.swift; sourceTree = "<group>"; };
+		315C5084272144B800726E35 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		315C50862721459500726E35 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		315C508A2721528400726E35 /* YXDownloadPhotoImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXDownloadPhotoImageCell.swift; sourceTree = "<group>"; };
+		315C508B2721528400726E35 /* YXPhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPhotoBrowserProgressView.swift; sourceTree = "<group>"; };
+		315C508C2721528400726E35 /* YXPhotoShowTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPhotoShowTool.swift; sourceTree = "<group>"; };
+		315C5091272152A900726E35 /* JXPhotoBrowserPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserPageIndicator.swift; sourceTree = "<group>"; };
+		315C5092272152A900726E35 /* JXPhotoBrowserNoneAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserNoneAnimator.swift; sourceTree = "<group>"; };
+		315C5093272152A900726E35 /* JXPhotoBrowserZoomSupportedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomSupportedCell.swift; sourceTree = "<group>"; };
+		315C5094272152A900726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserSmoothZoomAnimator.swift; sourceTree = "<group>"; };
+		315C5095272152A900726E35 /* JXPhotoBrowserImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserImageView.swift; sourceTree = "<group>"; };
+		315C5096272152A900726E35 /* JXPhotoBrowserAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		315C5097272152A900726E35 /* JXPhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserCell.swift; sourceTree = "<group>"; };
+		315C5098272152A900726E35 /* JXPhotoBrowserNumberPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserNumberPageIndicator.swift; sourceTree = "<group>"; };
+		315C5099272152A900726E35 /* JXPhotoBrowserZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomAnimator.swift; sourceTree = "<group>"; };
+		315C509A272152A900726E35 /* JXPhotoBrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserView.swift; sourceTree = "<group>"; };
+		315C509B272152A900726E35 /* JXPhotoBrowserDefaultPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserDefaultPageIndicator.swift; sourceTree = "<group>"; };
+		315C509C272152A900726E35 /* JXPhotoBrowserImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserImageCell.swift; sourceTree = "<group>"; };
+		315C509D272152A900726E35 /* JXPhotoBrowserFadeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserFadeAnimator.swift; sourceTree = "<group>"; };
+		315C509E272152A900726E35 /* JXPhotoBrowserLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserLog.swift; sourceTree = "<group>"; };
+		315C509F272152A900726E35 /* JXPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowser.swift; sourceTree = "<group>"; };
+		31BB6F8F273269F800E532B5 /* YXPublicMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPublicMethod.swift; sourceTree = "<group>"; };
+		31BB6F9227326A5200E532B5 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		31BB6F9327326A5200E532B5 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		31BB6F9427326A5200E532B5 /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
+		31BB6F9527326A5200E532B5 /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		31BB6F9627326A5200E532B5 /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		31BB6F9727326A5200E532B5 /* YXImagePickerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXImagePickerTool.h; sourceTree = "<group>"; };
+		31BB6F9827326A5200E532B5 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		31BB6F9927326A5200E532B5 /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		31BB6F9A27326A5200E532B5 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		31BB6F9B27326A5200E532B5 /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		31BB6F9C27326A5200E532B5 /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		31BB6F9D27326A5200E532B5 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		31BB6F9E27326A5200E532B5 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		31BB6F9F27326A5200E532B5 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		31BB6FA027326A5200E532B5 /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		31BB6FA127326A5200E532B5 /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		31BB6FA227326A5200E532B5 /* TZImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageRequestOperation.h; sourceTree = "<group>"; };
+		31BB6FA327326A5200E532B5 /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		31BB6FA427326A5200E532B5 /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		31BB6FA527326A5200E532B5 /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
+		31BB6FA627326A5200E532B5 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		31BB6FA727326A5200E532B5 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		31BB6FA827326A5200E532B5 /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		31BB6FA927326A5200E532B5 /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		31BB6FAA27326A5200E532B5 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		31BB6FAB27326A5200E532B5 /* YXImagePickerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXImagePickerTool.m; sourceTree = "<group>"; };
+		31BB6FAC27326A5200E532B5 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		31BB6FAD27326A5200E532B5 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		31BB6FAE27326A5200E532B5 /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		31BB6FAF27326A5200E532B5 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		31BB6FB027326A5200E532B5 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		31BB6FB127326A5200E532B5 /* TZImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageRequestOperation.m; sourceTree = "<group>"; };
+		31BB6FB227326A5200E532B5 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
+		31BB6FC427326EE100E532B5 /* YXRichTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXRichTextModel.swift; sourceTree = "<group>"; };
+		31BB6FC827326F5500E532B5 /* YXPostDraftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPostDraftViewModel.swift; sourceTree = "<group>"; };
+		31BB6FCB27326F5500E532B5 /* YXPostDraftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPostDraftModel.swift; sourceTree = "<group>"; };
+		31BB6FE02732888600E532B5 /* YXEditorShowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXEditorShowController.swift; sourceTree = "<group>"; };
+		31BB6FE427328C3800E532B5 /* YXEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXEditorViewModel.swift; sourceTree = "<group>"; };
+		31BB6FE72733756400E532B5 /* YXUserInterfaceStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXUserInterfaceStyleManager.swift; sourceTree = "<group>"; };
+		31BB6FE92733762900E532B5 /* YXLinkCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXLinkCardView.swift; sourceTree = "<group>"; };
+		31BB6FEB2733795C00E532B5 /* YXImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXImagePickerController.swift; sourceTree = "<group>"; };
+		31BB6FED27337A0600E532B5 /* UIImage+Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compress.h"; sourceTree = "<group>"; };
+		31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compress.m"; sourceTree = "<group>"; };
+		A32D012C180EC5620C41B208 /* Pods-RichTextEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichTextEditor.debug.xcconfig"; path = "Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C6A16087EF05BE49D47790 /* Pods-RichTextEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichTextEditor.release.xcconfig"; path = "Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor.release.xcconfig"; sourceTree = "<group>"; };
+		F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichTextEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +239,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6F198FFD68B4E12E2ADC8C /* Pods_RichTextEditor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8C66C8AF20D5CC5F5EAE52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A32D012C180EC5620C41B208 /* Pods-RichTextEditor.debug.xcconfig */,
+				F2C6A16087EF05BE49D47790 /* Pods-RichTextEditor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		315C4FE627201C7C00726E35 = {
 			isa = PBXGroup;
 			children = (
 				315C4FF127201C7D00726E35 /* RichTextEditor */,
 				315C4FF027201C7D00726E35 /* Products */,
+				1B8C66C8AF20D5CC5F5EAE52 /* Pods */,
+				32C8DD8010C021E197B1BA4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +277,278 @@
 			isa = PBXGroup;
 			children = (
 				315C4FF227201C7D00726E35 /* AppDelegate.swift */,
-				315C4FF427201C7D00726E35 /* SceneDelegate.swift */,
 				315C4FF627201C7D00726E35 /* ViewController.swift */,
+				31BB6FE427328C3800E532B5 /* YXEditorViewModel.swift */,
+				31BB6FE627329A4500E532B5 /* RichTextShowModule */,
+				31BB6FC627326F5500E532B5 /* PostDraft */,
+				315C500627201CBB00726E35 /* RichTextEditorModule */,
 				315C4FF827201C7D00726E35 /* Main.storyboard */,
 				315C4FFB27201C7E00726E35 /* Assets.xcassets */,
 				315C4FFD27201C7E00726E35 /* LaunchScreen.storyboard */,
 				315C500027201C7E00726E35 /* Info.plist */,
+				315C507F2721414D00726E35 /* RichTextEditor-Bridging-Header.h */,
 			);
 			path = RichTextEditor;
+			sourceTree = "<group>";
+		};
+		315C500627201CBB00726E35 /* RichTextEditorModule */ = {
+			isa = PBXGroup;
+			children = (
+				31BB6F9127326A5200E532B5 /* TZImagePickerController */,
+				31BB6F8F273269F800E532B5 /* YXPublicMethod.swift */,
+				31BB6FEB2733795C00E532B5 /* YXImagePickerController.swift */,
+				315C50862721459500726E35 /* DispatchQueue+Extension.swift */,
+				315C5084272144B800726E35 /* MBProgressHUD+Extension.swift */,
+				315C507D2721208400726E35 /* UIImageView+Extension.swift */,
+				315C507B2721203A00726E35 /* String+Extension.swift */,
+				315C507427203EE500726E35 /* UIView+Frame.swift */,
+				315C506E27203B7B00726E35 /* UIButton+Extension.swift */,
+				31BB6FED27337A0600E532B5 /* UIImage+Compress.h */,
+				31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */,
+				315C504A2720397300726E35 /* YXConst.swift */,
+				31BB6FE72733756400E532B5 /* YXUserInterfaceStyleManager.swift */,
+				315C50452720393700726E35 /* YXBaseController.swift */,
+				315C50442720393700726E35 /* YXBaseWithNavigationBarViewController.swift */,
+				315C5042272038FB00726E35 /* UIColor+Extension.swift */,
+				315C505327203AF000726E35 /* YXEmojiKeyboard */,
+				315C500E27201CBB00726E35 /* Controller */,
+				315C500927201CBB00726E35 /* Logic */,
+				315C501027201CBB00726E35 /* Model */,
+				315C501C27201CBB00726E35 /* Sources */,
+				315C501327201CBB00726E35 /* View */,
+				315C500727201CBB00726E35 /* ViewModel */,
+			);
+			path = RichTextEditorModule;
+			sourceTree = "<group>";
+		};
+		315C500727201CBB00726E35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				315C500827201CBB00726E35 /* YXNormalEditBaseViewModel.swift */,
+				315C5040272038CA00726E35 /* YXUploadImagesManager.swift */,
+				315C507227203E0800726E35 /* YXCommonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		315C500927201CBB00726E35 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				315C500C27201CBB00726E35 /* WKWebView+YXWebViewJSTool.h */,
+				315C500A27201CBB00726E35 /* WKWebView+YXWebViewJSTool.m */,
+				315C500B27201CBB00726E35 /* YXHtmlEditTool.h */,
+				315C500D27201CBB00726E35 /* YXHtmlEditTool.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		315C500E27201CBB00726E35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				315C500F27201CBB00726E35 /* YXNormalEditBaseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		315C501027201CBB00726E35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				315C501127201CBB00726E35 /* YXHtmlUploadPictureModel.swift */,
+				315C501227201CBB00726E35 /* YXEditWebViewPool.swift */,
+				31BB6FC427326EE100E532B5 /* YXRichTextModel.swift */,
+				315C507027203DFB00726E35 /* YXPostDetailModel.swift */,
+				315C504C2720398F00726E35 /* YXUserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		315C501327201CBB00726E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				315C5082272143B500726E35 /* YXImageView.swift */,
+				315C501B27201CBB00726E35 /* YXCommentEditorBar.swift */,
+				315C501827201CBB00726E35 /* YXCommentEditorBar.xib */,
+				315C501727201CBB00726E35 /* YXEditHeaderView.swift */,
+				315C501927201CBB00726E35 /* YXEditWebView.swift */,
+				315C501427201CBB00726E35 /* YXHtmlEditorBar.swift */,
+				315C501A27201CBB00726E35 /* YXHtmlEditorBar.xib */,
+				315C501527201CBB00726E35 /* YXHtmlEditorLinkBar.swift */,
+				315C501627201CBB00726E35 /* YXHtmlEditorLinkBar.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		315C501C27201CBB00726E35 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				315C502227201CBB00726E35 /* normalize.css */,
+				315C502127201CBB00726E35 /* style.css */,
+				315C502627201CBB00726E35 /* richText_editor.html */,
+				315C501E27201CBB00726E35 /* article_editor.js */,
+				315C502527201CBB00726E35 /* jquery.js */,
+				315C502027201CBB00726E35 /* base_edit_error_img.png */,
+				315C501D27201CBB00726E35 /* icon_refresh.png */,
+				315C502327201CBB00726E35 /* post_delete.png */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		315C505327203AF000726E35 /* YXEmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				315C505427203AF000726E35 /* YXTextAttachment.swift */,
+				315C505527203AF000726E35 /* YXEmojiTabbarCell.swift */,
+				315C505627203AF000726E35 /* YXEmojiInputView.swift */,
+				315C505827203AF000726E35 /* YXEmojiTabbar.xib */,
+				315C505927203AF000726E35 /* YXEmojiDataManager.swift */,
+				315C505A27203AF000726E35 /* YXEmojiTabbar.swift */,
+				315C505B27203AF000726E35 /* YXEmojiViewCell.swift */,
+				315C505C27203AF000726E35 /* YXEmojiContentView.swift */,
+				315C505D27203AF000726E35 /* YXEmojiViewCell.xib */,
+				315C505E27203AF000726E35 /* EmojiPackage.bundle */,
+				315C505F27203AF000726E35 /* YXEmojiModel.swift */,
+			);
+			path = YXEmojiKeyboard;
+			sourceTree = "<group>";
+		};
+		315C50882721528400726E35 /* PhotoShowModule */ = {
+			isa = PBXGroup;
+			children = (
+				315C50892721528400726E35 /* PhotoCell */,
+				315C508C2721528400726E35 /* YXPhotoShowTool.swift */,
+			);
+			path = PhotoShowModule;
+			sourceTree = "<group>";
+		};
+		315C50892721528400726E35 /* PhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				315C508A2721528400726E35 /* YXDownloadPhotoImageCell.swift */,
+				315C508B2721528400726E35 /* YXPhotoBrowserProgressView.swift */,
+			);
+			path = PhotoCell;
+			sourceTree = "<group>";
+		};
+		315C5090272152A900726E35 /* JXPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				315C5091272152A900726E35 /* JXPhotoBrowserPageIndicator.swift */,
+				315C5092272152A900726E35 /* JXPhotoBrowserNoneAnimator.swift */,
+				315C5093272152A900726E35 /* JXPhotoBrowserZoomSupportedCell.swift */,
+				315C5094272152A900726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift */,
+				315C5095272152A900726E35 /* JXPhotoBrowserImageView.swift */,
+				315C5096272152A900726E35 /* JXPhotoBrowserAnimatedTransitioning.swift */,
+				315C5097272152A900726E35 /* JXPhotoBrowserCell.swift */,
+				315C5098272152A900726E35 /* JXPhotoBrowserNumberPageIndicator.swift */,
+				315C5099272152A900726E35 /* JXPhotoBrowserZoomAnimator.swift */,
+				315C509A272152A900726E35 /* JXPhotoBrowserView.swift */,
+				315C509B272152A900726E35 /* JXPhotoBrowserDefaultPageIndicator.swift */,
+				315C509C272152A900726E35 /* JXPhotoBrowserImageCell.swift */,
+				315C509D272152A900726E35 /* JXPhotoBrowserFadeAnimator.swift */,
+				315C509E272152A900726E35 /* JXPhotoBrowserLog.swift */,
+				315C509F272152A900726E35 /* JXPhotoBrowser.swift */,
+			);
+			path = JXPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		31BB6F9127326A5200E532B5 /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				31BB6F9227326A5200E532B5 /* TZPhotoPreviewCell.h */,
+				31BB6F9327326A5200E532B5 /* TZPhotoPickerController.h */,
+				31BB6F9427326A5200E532B5 /* TZImageCropManager.m */,
+				31BB6F9527326A5200E532B5 /* TZImageManager.h */,
+				31BB6F9627326A5200E532B5 /* TZAssetCell.m */,
+				31BB6F9727326A5200E532B5 /* YXImagePickerTool.h */,
+				31BB6F9827326A5200E532B5 /* TZVideoPlayerController.m */,
+				31BB6F9927326A5200E532B5 /* TZAssetModel.m */,
+				31BB6F9A27326A5200E532B5 /* NSBundle+TZImagePicker.m */,
+				31BB6F9B27326A5200E532B5 /* TZLocationManager.h */,
+				31BB6F9C27326A5200E532B5 /* TZImagePickerController.h */,
+				31BB6F9D27326A5200E532B5 /* UIView+Layout.m */,
+				31BB6F9E27326A5200E532B5 /* TZPhotoPreviewController.m */,
+				31BB6F9F27326A5200E532B5 /* TZImagePickerController.bundle */,
+				31BB6FA027326A5200E532B5 /* TZProgressView.m */,
+				31BB6FA127326A5200E532B5 /* TZGifPhotoPreviewController.h */,
+				31BB6FA227326A5200E532B5 /* TZImageRequestOperation.h */,
+				31BB6FA327326A5200E532B5 /* TZAssetCell.h */,
+				31BB6FA427326A5200E532B5 /* TZImageManager.m */,
+				31BB6FA527326A5200E532B5 /* TZImageCropManager.h */,
+				31BB6FA627326A5200E532B5 /* TZPhotoPickerController.m */,
+				31BB6FA727326A5200E532B5 /* TZPhotoPreviewCell.m */,
+				31BB6FA827326A5200E532B5 /* NSBundle+TZImagePicker.h */,
+				31BB6FA927326A5200E532B5 /* TZAssetModel.h */,
+				31BB6FAA27326A5200E532B5 /* TZVideoPlayerController.h */,
+				31BB6FAB27326A5200E532B5 /* YXImagePickerTool.m */,
+				31BB6FAC27326A5200E532B5 /* TZPhotoPreviewController.h */,
+				31BB6FAD27326A5200E532B5 /* UIView+Layout.h */,
+				31BB6FAE27326A5200E532B5 /* TZImagePickerController.m */,
+				31BB6FAF27326A5200E532B5 /* TZLocationManager.m */,
+				31BB6FB027326A5200E532B5 /* TZGifPhotoPreviewController.m */,
+				31BB6FB127326A5200E532B5 /* TZImageRequestOperation.m */,
+				31BB6FB227326A5200E532B5 /* TZProgressView.h */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		31BB6FC627326F5500E532B5 /* PostDraft */ = {
+			isa = PBXGroup;
+			children = (
+				31BB6FC727326F5500E532B5 /* ViewModel */,
+				31BB6FC927326F5500E532B5 /* Controller */,
+				31BB6FCA27326F5500E532B5 /* Model */,
+				31BB6FCC27326F5500E532B5 /* View */,
+			);
+			path = PostDraft;
+			sourceTree = "<group>";
+		};
+		31BB6FC727326F5500E532B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				31BB6FC827326F5500E532B5 /* YXPostDraftViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		31BB6FC927326F5500E532B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		31BB6FCA27326F5500E532B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31BB6FCB27326F5500E532B5 /* YXPostDraftModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31BB6FCC27326F5500E532B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31BB6FE627329A4500E532B5 /* RichTextShowModule */ = {
+			isa = PBXGroup;
+			children = (
+				315C5090272152A900726E35 /* JXPhotoBrowser */,
+				315C50882721528400726E35 /* PhotoShowModule */,
+				31BB6FE02732888600E532B5 /* YXEditorShowController.swift */,
+				31BB6FE92733762900E532B5 /* YXLinkCardView.swift */,
+			);
+			path = RichTextShowModule;
+			sourceTree = "<group>";
+		};
+		32C8DD8010C021E197B1BA4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +558,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 315C500327201C7E00726E35 /* Build configuration list for PBXNativeTarget "RichTextEditor" */;
 			buildPhases = (
+				7B0F3634712DFF8AB53FD1DD /* [CP] Check Pods Manifest.lock */,
 				315C4FEB27201C7D00726E35 /* Sources */,
 				315C4FEC27201C7D00726E35 /* Frameworks */,
 				315C4FED27201C7D00726E35 /* Resources */,
+				04E7C0290DAD925DCF292971 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +589,7 @@
 				};
 			};
 			buildConfigurationList = 315C4FEA27201C7C00726E35 /* Build configuration list for PBXProject "RichTextEditor" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,22 +611,156 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315C506927203AF000726E35 /* YXEmojiViewCell.xib in Resources */,
+				315C503D27201CBB00726E35 /* jquery.js in Resources */,
+				315C503127201CBB00726E35 /* YXCommentEditorBar.xib in Resources */,
+				315C503B27201CBB00726E35 /* post_delete.png in Resources */,
+				315C502F27201CBB00726E35 /* YXHtmlEditorLinkBar.xib in Resources */,
+				315C506427203AF000726E35 /* YXEmojiTabbar.xib in Resources */,
 				315C4FFF27201C7E00726E35 /* LaunchScreen.storyboard in Resources */,
+				315C503827201CBB00726E35 /* base_edit_error_img.png in Resources */,
 				315C4FFC27201C7E00726E35 /* Assets.xcassets in Resources */,
+				315C503327201CBB00726E35 /* YXHtmlEditorBar.xib in Resources */,
+				315C503E27201CBB00726E35 /* richText_editor.html in Resources */,
+				315C503927201CBB00726E35 /* style.css in Resources */,
+				315C503527201CBB00726E35 /* icon_refresh.png in Resources */,
+				315C503A27201CBB00726E35 /* normalize.css in Resources */,
+				315C503627201CBB00726E35 /* article_editor.js in Resources */,
+				31BB6FBA27326A5200E532B5 /* TZImagePickerController.bundle in Resources */,
+				315C506A27203AF000726E35 /* EmojiPackage.bundle in Resources */,
 				315C4FFA27201C7D00726E35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04E7C0290DAD925DCF292971 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B0F3634712DFF8AB53FD1DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RichTextEditor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		315C4FEB27201C7D00726E35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315C50AD272152AA00726E35 /* JXPhotoBrowserLog.swift in Sources */,
+				315C504B2720397300726E35 /* YXConst.swift in Sources */,
+				31BB6FEC2733795C00E532B5 /* YXImagePickerController.swift in Sources */,
+				315C506527203AF000726E35 /* YXEmojiDataManager.swift in Sources */,
+				315C502A27201CBB00726E35 /* YXNormalEditBaseController.swift in Sources */,
+				31BB6F90273269F800E532B5 /* YXPublicMethod.swift in Sources */,
+				315C503427201CBB00726E35 /* YXCommentEditorBar.swift in Sources */,
+				315C50A0272152AA00726E35 /* JXPhotoBrowserPageIndicator.swift in Sources */,
+				315C506127203AF000726E35 /* YXEmojiTabbarCell.swift in Sources */,
+				31BB6FB827326A5200E532B5 /* UIView+Layout.m in Sources */,
+				31BB6FB627326A5200E532B5 /* TZAssetModel.m in Sources */,
+				31BB6FB527326A5200E532B5 /* TZVideoPlayerController.m in Sources */,
+				31BB6FB427326A5200E532B5 /* TZAssetCell.m in Sources */,
+				315C50462720393700726E35 /* YXBaseWithNavigationBarViewController.swift in Sources */,
+				31BB6FBF27326A5200E532B5 /* YXImagePickerTool.m in Sources */,
+				315C502B27201CBB00726E35 /* YXHtmlUploadPictureModel.swift in Sources */,
+				315C50A6272152AA00726E35 /* JXPhotoBrowserCell.swift in Sources */,
+				315C507E2721208400726E35 /* UIImageView+Extension.swift in Sources */,
+				315C50A1272152AA00726E35 /* JXPhotoBrowserNoneAnimator.swift in Sources */,
+				315C50A3272152AA00726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift in Sources */,
 				315C4FF727201C7D00726E35 /* ViewController.swift in Sources */,
+				315C502927201CBB00726E35 /* YXHtmlEditTool.m in Sources */,
+				31BB6FBE27326A5200E532B5 /* TZPhotoPreviewCell.m in Sources */,
+				315C507527203EE500726E35 /* UIView+Frame.swift in Sources */,
+				315C50AE272152AA00726E35 /* JXPhotoBrowser.swift in Sources */,
+				315C5085272144B800726E35 /* MBProgressHUD+Extension.swift in Sources */,
+				31BB6FE22732888600E532B5 /* YXEditorShowController.swift in Sources */,
+				315C508F2721528400726E35 /* YXPhotoShowTool.swift in Sources */,
+				31BB6FCD27326F5500E532B5 /* YXPostDraftViewModel.swift in Sources */,
+				315C503027201CBB00726E35 /* YXEditHeaderView.swift in Sources */,
+				315C50A8272152AA00726E35 /* JXPhotoBrowserZoomAnimator.swift in Sources */,
+				315C506027203AF000726E35 /* YXTextAttachment.swift in Sources */,
+				315C50A9272152AA00726E35 /* JXPhotoBrowserView.swift in Sources */,
+				315C506F27203B7B00726E35 /* UIButton+Extension.swift in Sources */,
+				315C50472720393700726E35 /* YXBaseController.swift in Sources */,
+				315C502E27201CBB00726E35 /* YXHtmlEditorLinkBar.swift in Sources */,
+				315C5043272038FC00726E35 /* UIColor+Extension.swift in Sources */,
+				315C50AB272152AA00726E35 /* JXPhotoBrowserImageCell.swift in Sources */,
+				31BB6FC527326EE100E532B5 /* YXRichTextModel.swift in Sources */,
+				315C506B27203AF000726E35 /* YXEmojiModel.swift in Sources */,
+				31BB6FEA2733762900E532B5 /* YXLinkCardView.swift in Sources */,
+				315C502D27201CBB00726E35 /* YXHtmlEditorBar.swift in Sources */,
+				315C508D2721528400726E35 /* YXDownloadPhotoImageCell.swift in Sources */,
+				315C506227203AF000726E35 /* YXEmojiInputView.swift in Sources */,
+				315C502727201CBB00726E35 /* YXNormalEditBaseViewModel.swift in Sources */,
+				31BB6FE527328C3800E532B5 /* YXEditorViewModel.swift in Sources */,
+				315C50AC272152AA00726E35 /* JXPhotoBrowserFadeAnimator.swift in Sources */,
+				315C5041272038CA00726E35 /* YXUploadImagesManager.swift in Sources */,
+				315C503227201CBB00726E35 /* YXEditWebView.swift in Sources */,
+				315C50A7272152AA00726E35 /* JXPhotoBrowserNumberPageIndicator.swift in Sources */,
+				31BB6FC227326A5200E532B5 /* TZGifPhotoPreviewController.m in Sources */,
+				315C50A5272152AA00726E35 /* JXPhotoBrowserAnimatedTransitioning.swift in Sources */,
+				315C504D2720398F00726E35 /* YXUserInfoModel.swift in Sources */,
+				31BB6FC327326A5200E532B5 /* TZImageRequestOperation.m in Sources */,
+				315C508E2721528400726E35 /* YXPhotoBrowserProgressView.swift in Sources */,
 				315C4FF327201C7D00726E35 /* AppDelegate.swift in Sources */,
-				315C4FF527201C7D00726E35 /* SceneDelegate.swift in Sources */,
+				315C507127203DFB00726E35 /* YXPostDetailModel.swift in Sources */,
+				315C507C2721203A00726E35 /* String+Extension.swift in Sources */,
+				31BB6FCE27326F5500E532B5 /* YXPostDraftModel.swift in Sources */,
+				315C5083272143B500726E35 /* YXImageView.swift in Sources */,
+				31BB6FC027326A5200E532B5 /* TZImagePickerController.m in Sources */,
+				315C506727203AF000726E35 /* YXEmojiViewCell.swift in Sources */,
+				31BB6FBC27326A5200E532B5 /* TZImageManager.m in Sources */,
+				31BB6FB327326A5200E532B5 /* TZImageCropManager.m in Sources */,
+				31BB6FC127326A5200E532B5 /* TZLocationManager.m in Sources */,
+				315C50AA272152AA00726E35 /* JXPhotoBrowserDefaultPageIndicator.swift in Sources */,
+				31BB6FBB27326A5200E532B5 /* TZProgressView.m in Sources */,
+				315C50A4272152AA00726E35 /* JXPhotoBrowserImageView.swift in Sources */,
+				31BB6FBD27326A5200E532B5 /* TZPhotoPickerController.m in Sources */,
+				31BB6FEF27337A0600E532B5 /* UIImage+Compress.m in Sources */,
+				315C506827203AF000726E35 /* YXEmojiContentView.swift in Sources */,
+				315C502827201CBB00726E35 /* WKWebView+YXWebViewJSTool.m in Sources */,
+				31BB6FB727326A5200E532B5 /* NSBundle+TZImagePicker.m in Sources */,
+				315C502C27201CBB00726E35 /* YXEditWebViewPool.swift in Sources */,
+				31BB6FE82733756400E532B5 /* YXUserInterfaceStyleManager.swift in Sources */,
+				31BB6FB927326A5200E532B5 /* TZPhotoPreviewController.m in Sources */,
+				315C506627203AF000726E35 /* YXEmojiTabbar.swift in Sources */,
+				315C50A2272152AA00726E35 /* JXPhotoBrowserZoomSupportedCell.swift in Sources */,
+				315C507327203E0800726E35 /* YXCommonViewModel.swift in Sources */,
+				315C50872721459500726E35 /* DispatchQueue+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +904,7 @@
 		};
 		315C500427201C7E00726E35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A32D012C180EC5620C41B208 /* Pods-RichTextEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,9 +915,11 @@
 				INFOPLIST_FILE = RichTextEditor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +928,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YX.RichTextEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RichTextEditor/RichTextEditor-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +936,7 @@
 		};
 		315C500527201C7E00726E35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C6A16087EF05BE49D47790 /* Pods-RichTextEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,9 +947,11 @@
 				INFOPLIST_FILE = RichTextEditor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +960,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YX.RichTextEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RichTextEditor/RichTextEditor-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

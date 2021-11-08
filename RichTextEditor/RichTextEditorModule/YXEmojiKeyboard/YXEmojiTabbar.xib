@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YXEmojiTabbar" customModule="HeroGameBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6pE-aF-UyM">
+                    <rect key="frame" x="16" y="0.0" width="349" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="X8t-El-VJ5">
+                        <size key="itemSize" width="60" height="40"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebE-jP-3AI">
+                    <rect key="frame" x="375" y="0.0" width="24" height="40"/>
+                    <state key="normal" image="delete-emoji"/>
+                    <connections>
+                        <action selector="deleteEmojiAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="cXK-Wp-IW8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ebE-jP-3AI" firstAttribute="leading" secondItem="6pE-aF-UyM" secondAttribute="trailing" constant="10" id="I1Q-CS-w1i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ebE-jP-3AI" secondAttribute="bottom" id="KBg-jt-9sz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6pE-aF-UyM" secondAttribute="bottom" id="KNu-o5-Qf5"/>
+                <constraint firstAttribute="trailing" secondItem="ebE-jP-3AI" secondAttribute="trailing" constant="15" id="O7p-Po-ev5"/>
+                <constraint firstItem="ebE-jP-3AI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ef2-So-fHz"/>
+                <constraint firstItem="6pE-aF-UyM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="gN5-Me-3Eu"/>
+                <constraint firstItem="6pE-aF-UyM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vvj-3n-BHt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myTabbarCollV" destination="6pE-aF-UyM" id="a7e-Fz-4aU"/>
+            </connections>
+            <point key="canvasLocation" x="81" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete-emoji" width="24" height="16"/>
+    </resources>
+</document>
