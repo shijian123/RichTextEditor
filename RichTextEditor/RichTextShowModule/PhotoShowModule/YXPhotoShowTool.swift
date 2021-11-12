@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import JXPhotoBrowser
+import JXPhotoBrowser
 
 class YXPhotoShowTool {
 

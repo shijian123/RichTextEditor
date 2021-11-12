@@ -13,5 +13,6 @@
 #import "TZImagePickerController.h"
 #import "UIImage+Compress.h"
 #import "YYText.h"
+#import "TZImagePickerController.h"
 
 #endif /* RichTextEditor_Bridging_Header_h */

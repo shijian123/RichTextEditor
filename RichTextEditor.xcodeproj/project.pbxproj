@@ -51,51 +51,14 @@
 		315C506927203AF000726E35 /* YXEmojiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315C505D27203AF000726E35 /* YXEmojiViewCell.xib */; };
 		315C506A27203AF000726E35 /* EmojiPackage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 315C505E27203AF000726E35 /* EmojiPackage.bundle */; };
 		315C506B27203AF000726E35 /* YXEmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C505F27203AF000726E35 /* YXEmojiModel.swift */; };
-		315C506F27203B7B00726E35 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C506E27203B7B00726E35 /* UIButton+Extension.swift */; };
 		315C507127203DFB00726E35 /* YXPostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507027203DFB00726E35 /* YXPostDetailModel.swift */; };
 		315C507327203E0800726E35 /* YXCommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507227203E0800726E35 /* YXCommonViewModel.swift */; };
 		315C507527203EE500726E35 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507427203EE500726E35 /* UIView+Frame.swift */; };
-		315C507C2721203A00726E35 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507B2721203A00726E35 /* String+Extension.swift */; };
-		315C507E2721208400726E35 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C507D2721208400726E35 /* UIImageView+Extension.swift */; };
 		315C5083272143B500726E35 /* YXImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5082272143B500726E35 /* YXImageView.swift */; };
-		315C5085272144B800726E35 /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5084272144B800726E35 /* MBProgressHUD+Extension.swift */; };
-		315C50872721459500726E35 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C50862721459500726E35 /* DispatchQueue+Extension.swift */; };
 		315C508D2721528400726E35 /* YXDownloadPhotoImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C508A2721528400726E35 /* YXDownloadPhotoImageCell.swift */; };
 		315C508E2721528400726E35 /* YXPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C508B2721528400726E35 /* YXPhotoBrowserProgressView.swift */; };
 		315C508F2721528400726E35 /* YXPhotoShowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C508C2721528400726E35 /* YXPhotoShowTool.swift */; };
-		315C50A0272152AA00726E35 /* JXPhotoBrowserPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5091272152A900726E35 /* JXPhotoBrowserPageIndicator.swift */; };
-		315C50A1272152AA00726E35 /* JXPhotoBrowserNoneAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5092272152A900726E35 /* JXPhotoBrowserNoneAnimator.swift */; };
-		315C50A2272152AA00726E35 /* JXPhotoBrowserZoomSupportedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5093272152A900726E35 /* JXPhotoBrowserZoomSupportedCell.swift */; };
-		315C50A3272152AA00726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5094272152A900726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift */; };
-		315C50A4272152AA00726E35 /* JXPhotoBrowserImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5095272152A900726E35 /* JXPhotoBrowserImageView.swift */; };
-		315C50A5272152AA00726E35 /* JXPhotoBrowserAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5096272152A900726E35 /* JXPhotoBrowserAnimatedTransitioning.swift */; };
-		315C50A6272152AA00726E35 /* JXPhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5097272152A900726E35 /* JXPhotoBrowserCell.swift */; };
-		315C50A7272152AA00726E35 /* JXPhotoBrowserNumberPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5098272152A900726E35 /* JXPhotoBrowserNumberPageIndicator.swift */; };
-		315C50A8272152AA00726E35 /* JXPhotoBrowserZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C5099272152A900726E35 /* JXPhotoBrowserZoomAnimator.swift */; };
-		315C50A9272152AA00726E35 /* JXPhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509A272152A900726E35 /* JXPhotoBrowserView.swift */; };
-		315C50AA272152AA00726E35 /* JXPhotoBrowserDefaultPageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509B272152A900726E35 /* JXPhotoBrowserDefaultPageIndicator.swift */; };
-		315C50AB272152AA00726E35 /* JXPhotoBrowserImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509C272152A900726E35 /* JXPhotoBrowserImageCell.swift */; };
-		315C50AC272152AA00726E35 /* JXPhotoBrowserFadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509D272152A900726E35 /* JXPhotoBrowserFadeAnimator.swift */; };
-		315C50AD272152AA00726E35 /* JXPhotoBrowserLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509E272152A900726E35 /* JXPhotoBrowserLog.swift */; };
-		315C50AE272152AA00726E35 /* JXPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C509F272152A900726E35 /* JXPhotoBrowser.swift */; };
 		31BB6F90273269F800E532B5 /* YXPublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F8F273269F800E532B5 /* YXPublicMethod.swift */; };
-		31BB6FB327326A5200E532B5 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9427326A5200E532B5 /* TZImageCropManager.m */; };
-		31BB6FB427326A5200E532B5 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9627326A5200E532B5 /* TZAssetCell.m */; };
-		31BB6FB527326A5200E532B5 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9827326A5200E532B5 /* TZVideoPlayerController.m */; };
-		31BB6FB627326A5200E532B5 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9927326A5200E532B5 /* TZAssetModel.m */; };
-		31BB6FB727326A5200E532B5 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9A27326A5200E532B5 /* NSBundle+TZImagePicker.m */; };
-		31BB6FB827326A5200E532B5 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9D27326A5200E532B5 /* UIView+Layout.m */; };
-		31BB6FB927326A5200E532B5 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6F9E27326A5200E532B5 /* TZPhotoPreviewController.m */; };
-		31BB6FBA27326A5200E532B5 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 31BB6F9F27326A5200E532B5 /* TZImagePickerController.bundle */; };
-		31BB6FBB27326A5200E532B5 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA027326A5200E532B5 /* TZProgressView.m */; };
-		31BB6FBC27326A5200E532B5 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA427326A5200E532B5 /* TZImageManager.m */; };
-		31BB6FBD27326A5200E532B5 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA627326A5200E532B5 /* TZPhotoPickerController.m */; };
-		31BB6FBE27326A5200E532B5 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FA727326A5200E532B5 /* TZPhotoPreviewCell.m */; };
-		31BB6FBF27326A5200E532B5 /* YXImagePickerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FAB27326A5200E532B5 /* YXImagePickerTool.m */; };
-		31BB6FC027326A5200E532B5 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FAE27326A5200E532B5 /* TZImagePickerController.m */; };
-		31BB6FC127326A5200E532B5 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FAF27326A5200E532B5 /* TZLocationManager.m */; };
-		31BB6FC227326A5200E532B5 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FB027326A5200E532B5 /* TZGifPhotoPreviewController.m */; };
-		31BB6FC327326A5200E532B5 /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FB127326A5200E532B5 /* TZImageRequestOperation.m */; };
 		31BB6FC527326EE100E532B5 /* YXRichTextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FC427326EE100E532B5 /* YXRichTextModel.swift */; };
 		31BB6FCD27326F5500E532B5 /* YXPostDraftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FC827326F5500E532B5 /* YXPostDraftViewModel.swift */; };
 		31BB6FCE27326F5500E532B5 /* YXPostDraftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FCB27326F5500E532B5 /* YXPostDraftModel.swift */; };
@@ -107,6 +70,7 @@
 		31BB6FEF27337A0600E532B5 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */; };
 		31BB70172738CF2E00E532B5 /* card_icon_link.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BB70162738CF2E00E532B5 /* card_icon_link.png */; };
 		31BB70192738D43F00E532B5 /* base_default_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 31BB70182738D43F00E532B5 /* base_default_img.png */; };
+		31BB7028273A811300E532B5 /* YX+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BB7027273A811300E532B5 /* YX+Extension.swift */; };
 		4C6F198FFD68B4E12E2ADC8C /* Pods_RichTextEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */; };
 /* End PBXBuildFile section */
 
@@ -159,68 +123,15 @@
 		315C505D27203AF000726E35 /* YXEmojiViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXEmojiViewCell.xib; sourceTree = "<group>"; };
 		315C505E27203AF000726E35 /* EmojiPackage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmojiPackage.bundle; sourceTree = "<group>"; };
 		315C505F27203AF000726E35 /* YXEmojiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXEmojiModel.swift; sourceTree = "<group>"; };
-		315C506E27203B7B00726E35 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		315C507027203DFB00726E35 /* YXPostDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPostDetailModel.swift; sourceTree = "<group>"; };
 		315C507227203E0800726E35 /* YXCommonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXCommonViewModel.swift; sourceTree = "<group>"; };
 		315C507427203EE500726E35 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
-		315C507B2721203A00726E35 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		315C507D2721208400726E35 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		315C507F2721414D00726E35 /* RichTextEditor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RichTextEditor-Bridging-Header.h"; sourceTree = "<group>"; };
 		315C5082272143B500726E35 /* YXImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXImageView.swift; sourceTree = "<group>"; };
-		315C5084272144B800726E35 /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
-		315C50862721459500726E35 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
 		315C508A2721528400726E35 /* YXDownloadPhotoImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXDownloadPhotoImageCell.swift; sourceTree = "<group>"; };
 		315C508B2721528400726E35 /* YXPhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPhotoBrowserProgressView.swift; sourceTree = "<group>"; };
 		315C508C2721528400726E35 /* YXPhotoShowTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPhotoShowTool.swift; sourceTree = "<group>"; };
-		315C5091272152A900726E35 /* JXPhotoBrowserPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserPageIndicator.swift; sourceTree = "<group>"; };
-		315C5092272152A900726E35 /* JXPhotoBrowserNoneAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserNoneAnimator.swift; sourceTree = "<group>"; };
-		315C5093272152A900726E35 /* JXPhotoBrowserZoomSupportedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomSupportedCell.swift; sourceTree = "<group>"; };
-		315C5094272152A900726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserSmoothZoomAnimator.swift; sourceTree = "<group>"; };
-		315C5095272152A900726E35 /* JXPhotoBrowserImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserImageView.swift; sourceTree = "<group>"; };
-		315C5096272152A900726E35 /* JXPhotoBrowserAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserAnimatedTransitioning.swift; sourceTree = "<group>"; };
-		315C5097272152A900726E35 /* JXPhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserCell.swift; sourceTree = "<group>"; };
-		315C5098272152A900726E35 /* JXPhotoBrowserNumberPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserNumberPageIndicator.swift; sourceTree = "<group>"; };
-		315C5099272152A900726E35 /* JXPhotoBrowserZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserZoomAnimator.swift; sourceTree = "<group>"; };
-		315C509A272152A900726E35 /* JXPhotoBrowserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserView.swift; sourceTree = "<group>"; };
-		315C509B272152A900726E35 /* JXPhotoBrowserDefaultPageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserDefaultPageIndicator.swift; sourceTree = "<group>"; };
-		315C509C272152A900726E35 /* JXPhotoBrowserImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserImageCell.swift; sourceTree = "<group>"; };
-		315C509D272152A900726E35 /* JXPhotoBrowserFadeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserFadeAnimator.swift; sourceTree = "<group>"; };
-		315C509E272152A900726E35 /* JXPhotoBrowserLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowserLog.swift; sourceTree = "<group>"; };
-		315C509F272152A900726E35 /* JXPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXPhotoBrowser.swift; sourceTree = "<group>"; };
 		31BB6F8F273269F800E532B5 /* YXPublicMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPublicMethod.swift; sourceTree = "<group>"; };
-		31BB6F9227326A5200E532B5 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
-		31BB6F9327326A5200E532B5 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
-		31BB6F9427326A5200E532B5 /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
-		31BB6F9527326A5200E532B5 /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
-		31BB6F9627326A5200E532B5 /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
-		31BB6F9727326A5200E532B5 /* YXImagePickerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXImagePickerTool.h; sourceTree = "<group>"; };
-		31BB6F9827326A5200E532B5 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
-		31BB6F9927326A5200E532B5 /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
-		31BB6F9A27326A5200E532B5 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
-		31BB6F9B27326A5200E532B5 /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
-		31BB6F9C27326A5200E532B5 /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
-		31BB6F9D27326A5200E532B5 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
-		31BB6F9E27326A5200E532B5 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
-		31BB6F9F27326A5200E532B5 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
-		31BB6FA027326A5200E532B5 /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
-		31BB6FA127326A5200E532B5 /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
-		31BB6FA227326A5200E532B5 /* TZImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageRequestOperation.h; sourceTree = "<group>"; };
-		31BB6FA327326A5200E532B5 /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
-		31BB6FA427326A5200E532B5 /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
-		31BB6FA527326A5200E532B5 /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
-		31BB6FA627326A5200E532B5 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
-		31BB6FA727326A5200E532B5 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
-		31BB6FA827326A5200E532B5 /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
-		31BB6FA927326A5200E532B5 /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
-		31BB6FAA27326A5200E532B5 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
-		31BB6FAB27326A5200E532B5 /* YXImagePickerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXImagePickerTool.m; sourceTree = "<group>"; };
-		31BB6FAC27326A5200E532B5 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
-		31BB6FAD27326A5200E532B5 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		31BB6FAE27326A5200E532B5 /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
-		31BB6FAF27326A5200E532B5 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
-		31BB6FB027326A5200E532B5 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
-		31BB6FB127326A5200E532B5 /* TZImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageRequestOperation.m; sourceTree = "<group>"; };
-		31BB6FB227326A5200E532B5 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		31BB6FC427326EE100E532B5 /* YXRichTextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXRichTextModel.swift; sourceTree = "<group>"; };
 		31BB6FC827326F5500E532B5 /* YXPostDraftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPostDraftViewModel.swift; sourceTree = "<group>"; };
 		31BB6FCB27326F5500E532B5 /* YXPostDraftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YXPostDraftModel.swift; sourceTree = "<group>"; };
@@ -233,6 +144,7 @@
 		31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compress.m"; sourceTree = "<group>"; };
 		31BB70162738CF2E00E532B5 /* card_icon_link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_icon_link.png; sourceTree = "<group>"; };
 		31BB70182738D43F00E532B5 /* base_default_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base_default_img.png; sourceTree = "<group>"; };
+		31BB7027273A811300E532B5 /* YX+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YX+Extension.swift"; sourceTree = "<group>"; };
 		A32D012C180EC5620C41B208 /* Pods-RichTextEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichTextEditor.debug.xcconfig"; path = "Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C6A16087EF05BE49D47790 /* Pods-RichTextEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichTextEditor.release.xcconfig"; path = "Target Support Files/Pods-RichTextEditor/Pods-RichTextEditor.release.xcconfig"; sourceTree = "<group>"; };
 		F855844CE0437B6B4F89E3E3 /* Pods_RichTextEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichTextEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,15 +210,10 @@
 		315C500627201CBB00726E35 /* RichTextEditorModule */ = {
 			isa = PBXGroup;
 			children = (
-				31BB6F9127326A5200E532B5 /* TZImagePickerController */,
 				31BB6F8F273269F800E532B5 /* YXPublicMethod.swift */,
+				31BB7027273A811300E532B5 /* YX+Extension.swift */,
 				31BB6FEB2733795C00E532B5 /* YXImagePickerController.swift */,
-				315C50862721459500726E35 /* DispatchQueue+Extension.swift */,
-				315C5084272144B800726E35 /* MBProgressHUD+Extension.swift */,
-				315C507D2721208400726E35 /* UIImageView+Extension.swift */,
-				315C507B2721203A00726E35 /* String+Extension.swift */,
 				315C507427203EE500726E35 /* UIView+Frame.swift */,
-				315C506E27203B7B00726E35 /* UIButton+Extension.swift */,
 				31BB6FED27337A0600E532B5 /* UIImage+Compress.h */,
 				31BB6FEE27337A0600E532B5 /* UIImage+Compress.m */,
 				315C504A2720397300726E35 /* YXConst.swift */,
@@ -435,68 +342,6 @@
 			path = PhotoCell;
 			sourceTree = "<group>";
 		};
-		315C5090272152A900726E35 /* JXPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				315C5091272152A900726E35 /* JXPhotoBrowserPageIndicator.swift */,
-				315C5092272152A900726E35 /* JXPhotoBrowserNoneAnimator.swift */,
-				315C5093272152A900726E35 /* JXPhotoBrowserZoomSupportedCell.swift */,
-				315C5094272152A900726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift */,
-				315C5095272152A900726E35 /* JXPhotoBrowserImageView.swift */,
-				315C5096272152A900726E35 /* JXPhotoBrowserAnimatedTransitioning.swift */,
-				315C5097272152A900726E35 /* JXPhotoBrowserCell.swift */,
-				315C5098272152A900726E35 /* JXPhotoBrowserNumberPageIndicator.swift */,
-				315C5099272152A900726E35 /* JXPhotoBrowserZoomAnimator.swift */,
-				315C509A272152A900726E35 /* JXPhotoBrowserView.swift */,
-				315C509B272152A900726E35 /* JXPhotoBrowserDefaultPageIndicator.swift */,
-				315C509C272152A900726E35 /* JXPhotoBrowserImageCell.swift */,
-				315C509D272152A900726E35 /* JXPhotoBrowserFadeAnimator.swift */,
-				315C509E272152A900726E35 /* JXPhotoBrowserLog.swift */,
-				315C509F272152A900726E35 /* JXPhotoBrowser.swift */,
-			);
-			path = JXPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		31BB6F9127326A5200E532B5 /* TZImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				31BB6F9227326A5200E532B5 /* TZPhotoPreviewCell.h */,
-				31BB6F9327326A5200E532B5 /* TZPhotoPickerController.h */,
-				31BB6F9427326A5200E532B5 /* TZImageCropManager.m */,
-				31BB6F9527326A5200E532B5 /* TZImageManager.h */,
-				31BB6F9627326A5200E532B5 /* TZAssetCell.m */,
-				31BB6F9727326A5200E532B5 /* YXImagePickerTool.h */,
-				31BB6F9827326A5200E532B5 /* TZVideoPlayerController.m */,
-				31BB6F9927326A5200E532B5 /* TZAssetModel.m */,
-				31BB6F9A27326A5200E532B5 /* NSBundle+TZImagePicker.m */,
-				31BB6F9B27326A5200E532B5 /* TZLocationManager.h */,
-				31BB6F9C27326A5200E532B5 /* TZImagePickerController.h */,
-				31BB6F9D27326A5200E532B5 /* UIView+Layout.m */,
-				31BB6F9E27326A5200E532B5 /* TZPhotoPreviewController.m */,
-				31BB6F9F27326A5200E532B5 /* TZImagePickerController.bundle */,
-				31BB6FA027326A5200E532B5 /* TZProgressView.m */,
-				31BB6FA127326A5200E532B5 /* TZGifPhotoPreviewController.h */,
-				31BB6FA227326A5200E532B5 /* TZImageRequestOperation.h */,
-				31BB6FA327326A5200E532B5 /* TZAssetCell.h */,
-				31BB6FA427326A5200E532B5 /* TZImageManager.m */,
-				31BB6FA527326A5200E532B5 /* TZImageCropManager.h */,
-				31BB6FA627326A5200E532B5 /* TZPhotoPickerController.m */,
-				31BB6FA727326A5200E532B5 /* TZPhotoPreviewCell.m */,
-				31BB6FA827326A5200E532B5 /* NSBundle+TZImagePicker.h */,
-				31BB6FA927326A5200E532B5 /* TZAssetModel.h */,
-				31BB6FAA27326A5200E532B5 /* TZVideoPlayerController.h */,
-				31BB6FAB27326A5200E532B5 /* YXImagePickerTool.m */,
-				31BB6FAC27326A5200E532B5 /* TZPhotoPreviewController.h */,
-				31BB6FAD27326A5200E532B5 /* UIView+Layout.h */,
-				31BB6FAE27326A5200E532B5 /* TZImagePickerController.m */,
-				31BB6FAF27326A5200E532B5 /* TZLocationManager.m */,
-				31BB6FB027326A5200E532B5 /* TZGifPhotoPreviewController.m */,
-				31BB6FB127326A5200E532B5 /* TZImageRequestOperation.m */,
-				31BB6FB227326A5200E532B5 /* TZProgressView.h */,
-			);
-			path = TZImagePickerController;
-			sourceTree = "<group>";
-		};
 		31BB6FC627326F5500E532B5 /* PostDraft */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,7 +386,6 @@
 		31BB6FE627329A4500E532B5 /* RichTextShowModule */ = {
 			isa = PBXGroup;
 			children = (
-				315C5090272152A900726E35 /* JXPhotoBrowser */,
 				315C50882721528400726E35 /* PhotoShowModule */,
 				31BB6FE02732888600E532B5 /* YXEditorShowController.swift */,
 				31BB6FE92733762900E532B5 /* YXLinkCardView.swift */,
@@ -586,6 +430,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = YX;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
@@ -633,7 +478,6 @@
 				315C503A27201CBB00726E35 /* normalize.css in Resources */,
 				31BB70192738D43F00E532B5 /* base_default_img.png in Resources */,
 				315C503627201CBB00726E35 /* article_editor.js in Resources */,
-				31BB6FBA27326A5200E532B5 /* TZImagePickerController.bundle in Resources */,
 				315C506A27203AF000726E35 /* EmojiPackage.bundle in Resources */,
 				31BB70172738CF2E00E532B5 /* card_icon_link.png in Resources */,
 				315C4FFA27201C7D00726E35 /* Main.storyboard in Resources */,
@@ -689,44 +533,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315C50AD272152AA00726E35 /* JXPhotoBrowserLog.swift in Sources */,
 				315C504B2720397300726E35 /* YXConst.swift in Sources */,
 				31BB6FEC2733795C00E532B5 /* YXImagePickerController.swift in Sources */,
 				315C506527203AF000726E35 /* YXEmojiDataManager.swift in Sources */,
 				315C502A27201CBB00726E35 /* YXNormalEditBaseController.swift in Sources */,
 				31BB6F90273269F800E532B5 /* YXPublicMethod.swift in Sources */,
 				315C503427201CBB00726E35 /* YXCommentEditorBar.swift in Sources */,
-				315C50A0272152AA00726E35 /* JXPhotoBrowserPageIndicator.swift in Sources */,
 				315C506127203AF000726E35 /* YXEmojiTabbarCell.swift in Sources */,
-				31BB6FB827326A5200E532B5 /* UIView+Layout.m in Sources */,
-				31BB6FB627326A5200E532B5 /* TZAssetModel.m in Sources */,
-				31BB6FB527326A5200E532B5 /* TZVideoPlayerController.m in Sources */,
-				31BB6FB427326A5200E532B5 /* TZAssetCell.m in Sources */,
 				315C50462720393700726E35 /* YXBaseWithNavigationBarViewController.swift in Sources */,
-				31BB6FBF27326A5200E532B5 /* YXImagePickerTool.m in Sources */,
 				315C502B27201CBB00726E35 /* YXHtmlUploadPictureModel.swift in Sources */,
-				315C50A6272152AA00726E35 /* JXPhotoBrowserCell.swift in Sources */,
-				315C507E2721208400726E35 /* UIImageView+Extension.swift in Sources */,
-				315C50A1272152AA00726E35 /* JXPhotoBrowserNoneAnimator.swift in Sources */,
-				315C50A3272152AA00726E35 /* JXPhotoBrowserSmoothZoomAnimator.swift in Sources */,
+				31BB7028273A811300E532B5 /* YX+Extension.swift in Sources */,
 				315C4FF727201C7D00726E35 /* ViewController.swift in Sources */,
 				315C502927201CBB00726E35 /* YXHtmlEditTool.m in Sources */,
-				31BB6FBE27326A5200E532B5 /* TZPhotoPreviewCell.m in Sources */,
 				315C507527203EE500726E35 /* UIView+Frame.swift in Sources */,
-				315C50AE272152AA00726E35 /* JXPhotoBrowser.swift in Sources */,
-				315C5085272144B800726E35 /* MBProgressHUD+Extension.swift in Sources */,
 				31BB6FE22732888600E532B5 /* YXEditorShowController.swift in Sources */,
 				315C508F2721528400726E35 /* YXPhotoShowTool.swift in Sources */,
 				31BB6FCD27326F5500E532B5 /* YXPostDraftViewModel.swift in Sources */,
 				315C503027201CBB00726E35 /* YXEditHeaderView.swift in Sources */,
-				315C50A8272152AA00726E35 /* JXPhotoBrowserZoomAnimator.swift in Sources */,
 				315C506027203AF000726E35 /* YXTextAttachment.swift in Sources */,
-				315C50A9272152AA00726E35 /* JXPhotoBrowserView.swift in Sources */,
-				315C506F27203B7B00726E35 /* UIButton+Extension.swift in Sources */,
 				315C50472720393700726E35 /* YXBaseController.swift in Sources */,
 				315C502E27201CBB00726E35 /* YXHtmlEditorLinkBar.swift in Sources */,
 				315C5043272038FC00726E35 /* UIColor+Extension.swift in Sources */,
-				315C50AB272152AA00726E35 /* JXPhotoBrowserImageCell.swift in Sources */,
 				31BB6FC527326EE100E532B5 /* YXRichTextModel.swift in Sources */,
 				315C506B27203AF000726E35 /* YXEmojiModel.swift in Sources */,
 				31BB6FEA2733762900E532B5 /* YXLinkCardView.swift in Sources */,
@@ -735,40 +562,22 @@
 				315C506227203AF000726E35 /* YXEmojiInputView.swift in Sources */,
 				315C502727201CBB00726E35 /* YXNormalEditBaseViewModel.swift in Sources */,
 				31BB6FE527328C3800E532B5 /* YXEditorViewModel.swift in Sources */,
-				315C50AC272152AA00726E35 /* JXPhotoBrowserFadeAnimator.swift in Sources */,
 				315C5041272038CA00726E35 /* YXUploadImagesManager.swift in Sources */,
 				315C503227201CBB00726E35 /* YXEditWebView.swift in Sources */,
-				315C50A7272152AA00726E35 /* JXPhotoBrowserNumberPageIndicator.swift in Sources */,
-				31BB6FC227326A5200E532B5 /* TZGifPhotoPreviewController.m in Sources */,
-				315C50A5272152AA00726E35 /* JXPhotoBrowserAnimatedTransitioning.swift in Sources */,
 				315C504D2720398F00726E35 /* YXUserInfoModel.swift in Sources */,
-				31BB6FC327326A5200E532B5 /* TZImageRequestOperation.m in Sources */,
 				315C508E2721528400726E35 /* YXPhotoBrowserProgressView.swift in Sources */,
 				315C4FF327201C7D00726E35 /* AppDelegate.swift in Sources */,
 				315C507127203DFB00726E35 /* YXPostDetailModel.swift in Sources */,
-				315C507C2721203A00726E35 /* String+Extension.swift in Sources */,
 				31BB6FCE27326F5500E532B5 /* YXPostDraftModel.swift in Sources */,
 				315C5083272143B500726E35 /* YXImageView.swift in Sources */,
-				31BB6FC027326A5200E532B5 /* TZImagePickerController.m in Sources */,
 				315C506727203AF000726E35 /* YXEmojiViewCell.swift in Sources */,
-				31BB6FBC27326A5200E532B5 /* TZImageManager.m in Sources */,
-				31BB6FB327326A5200E532B5 /* TZImageCropManager.m in Sources */,
-				31BB6FC127326A5200E532B5 /* TZLocationManager.m in Sources */,
-				315C50AA272152AA00726E35 /* JXPhotoBrowserDefaultPageIndicator.swift in Sources */,
-				31BB6FBB27326A5200E532B5 /* TZProgressView.m in Sources */,
-				315C50A4272152AA00726E35 /* JXPhotoBrowserImageView.swift in Sources */,
-				31BB6FBD27326A5200E532B5 /* TZPhotoPickerController.m in Sources */,
 				31BB6FEF27337A0600E532B5 /* UIImage+Compress.m in Sources */,
 				315C506827203AF000726E35 /* YXEmojiContentView.swift in Sources */,
 				315C502827201CBB00726E35 /* WKWebView+YXWebViewJSTool.m in Sources */,
-				31BB6FB727326A5200E532B5 /* NSBundle+TZImagePicker.m in Sources */,
 				315C502C27201CBB00726E35 /* YXEditWebViewPool.swift in Sources */,
 				31BB6FE82733756400E532B5 /* YXUserInterfaceStyleManager.swift in Sources */,
-				31BB6FB927326A5200E532B5 /* TZPhotoPreviewController.m in Sources */,
 				315C506627203AF000726E35 /* YXEmojiTabbar.swift in Sources */,
-				315C50A2272152AA00726E35 /* JXPhotoBrowserZoomSupportedCell.swift in Sources */,
 				315C507327203E0800726E35 /* YXCommonViewModel.swift in Sources */,
-				315C50872721459500726E35 /* DispatchQueue+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

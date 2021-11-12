@@ -30,7 +30,7 @@ class YXImagePickerController: TZImagePickerController {
         self.oKButtonTitleColorNormal = UIColor(hexString: "0x7352FF")
         self.oKButtonTitleColorDisabled = UIColor(hexString: "0x7352FF", alpha: 0.6)
         
-        self.showGifTag = true
+//        self.showGifTag = true
         self.didFinishPickingPhotosHandle = { [weak self] (photos, assets, isSelectOriginalPhoto) in
             let images: [YXUploadImageModel] = self?.getUploadDataModels(assets: assets!) ?? []
             self?.selectPhotosFinishClosure?(images)

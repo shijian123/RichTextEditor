@@ -637,22 +637,6 @@ extension YXCommonViewModel {
 }
 
 
-// MARK: 关于ImageView
-
-extension YXCommonViewModel {
-    
-    /// 将头像进行压缩后的展示
-    /// - Parameters:
-    ///   - headImgV: 头像
-    ///   - url: 头像url
-    static func showResizeHeadImageView(_ headImgV: UIImageView, url: String) {
-        let url = url.resizeHeadImageUrl()
-        headImgV.setImage(with: url, placeholderImgStr: "base_headImg_default")
-    }
-
-}
-
-
 // MARK: 字符串处理
 
 extension YXCommonViewModel {

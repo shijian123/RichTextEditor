@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//import JXPhotoBrowser
+import JXPhotoBrowser
 
 class YXDownloadPhotoImageCell: JXPhotoBrowserImageCell {
 
