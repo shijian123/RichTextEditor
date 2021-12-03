@@ -117,7 +117,7 @@ extension String {
     /// 表情包是否为大图
     func isLargeEmoji() -> Bool {
         var isLarge = false
-        if self.contains("创魔-") {
+        if self.contains("bigImg-") {
             isLarge = true
         }
         return isLarge
