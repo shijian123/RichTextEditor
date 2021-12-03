@@ -6,16 +6,17 @@
 
 #### 插入表情包
 
-![动图1](https://user-images.githubusercontent.com/11764459/141409999-ac4afc02-7042-4355-a8ec-602272b5be7e.gif)
+![动图1](https://user-images.githubusercontent.com/11764459/144536221-7277ee0c-e083-4246-a2b1-97026176c225.gif)
 
-#### 插入图片
 
-![动图2](https://user-images.githubusercontent.com/11764459/141410017-fd158c58-42ae-4d38-a73b-62dca06af793.gif)
+#### 插入图片 & 插入链接卡片
 
-#### 插入链接卡片
 
-![动图3](https://user-images.githubusercontent.com/11764459/141410029-638ccb8e-d549-4ac3-beaf-76279709d900.gif)
+![动图2](https://user-images.githubusercontent.com/11764459/144536264-ff1d3f10-9c5e-4681-8699-53e31691584c.gif)
+
 
 #### 最终生成的效果
 
-![动图4](https://user-images.githubusercontent.com/11764459/141413662-5e9684d2-e781-4828-a36d-cbfc952938e4.gif)
+
+![动图3](https://user-images.githubusercontent.com/11764459/144536287-a4415ca4-ac67-4fdc-b92c-fa54c3023a15.gif)
+
